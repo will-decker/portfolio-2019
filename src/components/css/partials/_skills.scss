@@ -1,4 +1,31 @@
 .skills {
-  height: 200px;
+  padding-top: 2rem;
   background: $accent;
+
+  h2 {
+    font-size: 2.6em;
+    text-align: center;
+    margin-top: .8rem;
+    margin-bottom: 0;
+  }
+
+  .skills-flex-container {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .skill-logo {
+      margin: 1.5rem;
+      height: 4rem;
+    }
+
+    .skill-transition {
+      transition: all 0.5s ease;
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
+  }
 }

@@ -2,7 +2,10 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import MainContent from "../components/main_content"
+import Intro from "../components/intro"
+import About from "../components/about"
+import Skills from "../components/skills"
+
 
 import "../components/css/main.scss"
 
@@ -26,7 +29,9 @@ const IndexPage = () => (
         `wordpress designer`,
       ]}
     />
-    <MainContent />
+    <Intro />
+    <About />
+    <Skills />
   </Layout>
 )
 
