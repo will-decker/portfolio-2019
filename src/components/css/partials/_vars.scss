@@ -1,0 +1,11 @@
+// Variables
+$primary: #353940;
+$accent: #3e92a3;
+$highlight: #ff5335;
+$text: #dfe0d4;
+
+// Mixins
+@mixin container {
+  max-width: 1400px;
+  margin: 0 auto;
+}

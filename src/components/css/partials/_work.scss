@@ -1,0 +1,8 @@
+#work {
+  height: 600px;
+  width: 100%;
+  // Create mixin for code below
+  background-blend-mode: multiply;
+  background-image: url("../../images/fake_luxury_@2X.png");
+  background-color: $primary;
+}

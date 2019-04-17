@@ -1,0 +1,35 @@
+#landing {
+  display: flex;
+  height: 925px;
+  width: 100%;
+  background-blend-mode: multiply;
+  background-image: url("../../images/fake_luxury_@2X.png");
+  background-color: $primary;
+
+  .intro-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .intro-text {
+      width: 500px;
+      margin: 0 30px;
+
+      h1 {
+        letter-spacing: 3.3px;
+        font-size: 4em;
+        margin-bottom: -5px;
+      }
+
+      h2 {
+        font-size: 2.6em;
+      }
+    }
+
+    .intro-avatar {
+      width: 200px;
+    }
+  }
+}

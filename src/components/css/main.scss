@@ -1,0 +1,32 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Bitter|Roboto+Slab");
+
+// Sass Partials
+@import "partials/_layout";
+@import "partials/_vars";
+@import "partials/_header";
+@import "partials/_landing";
+@import "partials/_about";
+@import "partials/_skills";
+@import "partials/_work";
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto Slab", serif;
+  background: $primary;
+  color: $text;
+
+  h1 {
+    font-family: "Bitter", serif;
+    color: $accent;
+  }
+
+  h2 {
+    font-family: "Roboto Slab", serif;
+    color: $text;
+  }
+}
