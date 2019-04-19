@@ -11,13 +11,10 @@ class Header extends React.Component {
         <nav className="navbar">
           <ul>
             <li>
-              <Link to="#intro">Home</Link>
+              <Link to="/#about">About</Link>
             </li>
             <li>
-              <Link to="#about">About</Link>
-            </li>
-            <li>
-              <Link to="#work">Work</Link>
+              <Link to="/#work">Work</Link>
             </li>
             <li>
               <Link to="/">Contact</Link>
