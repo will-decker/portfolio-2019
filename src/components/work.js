@@ -1,5 +1,7 @@
 import React from "react"
 
-const Work = () => ()
+const Work = () => (
+  <section id="work" />  
+)
 
 export default Work

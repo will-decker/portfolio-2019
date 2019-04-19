@@ -1,4 +1,4 @@
-.intro {
+#intro {
   display: flex;
   height: 925px;
   width: 100%;
@@ -18,9 +18,9 @@
       margin: 0 30px;
 
       h1 {
-        letter-spacing: 3.3px;
-        font-size: 4em;
-        margin-bottom: -5px;
+        font-size: 5.8em;
+        line-height: 90px;
+        margin-bottom: 20px;
       }
 
       h2 {
@@ -29,7 +29,7 @@
     }
 
     .intro-avatar {
-      width: 200px;
+      width: 15rem;
     }
   }
 }

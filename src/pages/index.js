@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 import Intro from "../components/intro"
 import About from "../components/about"
 import Skills from "../components/skills"
+import Work from "../components/work"
 
 
 import "../components/css/main.scss"
@@ -32,6 +33,7 @@ const IndexPage = () => (
     <Intro />
     <About />
     <Skills />
+    <Work />
   </Layout>
 )
 

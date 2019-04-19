@@ -2,7 +2,7 @@ import React from "react"
 import avatar from "../images/WD_Avatar.svg"
 
 const Intro = () => (
-  <section className="intro">
+  <section id="intro">
     <div className="intro-container">
       <div className="intro-text">
         <h1>Will Decker</h1>

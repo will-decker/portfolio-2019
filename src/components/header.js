@@ -1,34 +1,37 @@
 import { Link } from "gatsby"
 import React from "react"
+import Headroom from "react-headroom"
 import logo from "../images/wd_logo.svg"
 
-const Header = () => (
-  <header className="nav-header">
-    <nav className="navbar">
-      <div className="nav-menu">
-        <ul>
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/">About</a>
-          </li>
-          <li>
-            <a href="/">Work</a>
-          </li>
-          <li>
-            <a href="/">Contact</a>
-          </li>
-        </ul>
-      </div>
-      <div className="spacer" />
-      <div className="logo">
-        <Link to="/">
-          <img src={logo} alt="logo" />
-        </Link>
-      </div>
-    </nav>
-  </header>
-)
+class Header extends React.Component {
+
+  render() {
+    return (
+      <Headroom calcHeightOnResize disableInlineStyles>
+        <nav className="navbar">
+          <ul>
+            <li>
+              <Link to="#intro">Home</Link>
+            </li>
+            <li>
+              <Link to="#about">About</Link>
+            </li>
+            <li>
+              <Link to="#work">Work</Link>
+            </li>
+            <li>
+              <Link to="/">Contact</Link>
+            </li>
+          </ul>
+        </nav>
+        <div className="logo">
+          <Link to="/">
+            <img src={logo} alt="logo" />
+          </Link>
+        </div>
+      </Headroom>
+    );
+  }
+} 
 
 export default Header

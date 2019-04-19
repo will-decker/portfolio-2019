@@ -9,3 +9,7 @@ $text: #dfe0d4;
   max-width: 1400px;
   margin: 0 auto;
 }
+
+@mixin headroom-trans {
+  transition: all 0.6s ease-in-out;
+}

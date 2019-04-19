@@ -9,9 +9,10 @@ import Sass from '../images/skills/sass.svg'
 import Bootstrap from '../images/skills/bootstrap.svg'
 import Photoshop from '../images/skills/photoshop.svg'
 import Illustrator from '../images/skills/illustrator.svg'
+import WordPress from '../images/skills/wordpress.svg'
 
 const Skills = () => {
-  const logos = [HTML5, CSS3, JavaScript, ReactJS, Sass, Bootstrap, GitHub, Photoshop, Illustrator];
+  const logos = [HTML5, CSS3, JavaScript, ReactJS, Sass, Bootstrap, GitHub, WordPress, Photoshop, Illustrator];
   return (
     <section className="skills" data-aos="fade-right">
       <h2>Skills</h2>

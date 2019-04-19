@@ -1,0 +1,30 @@
+.headroom {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  padding: 1.3rem 1.8rem;
+}
+
+.headroom--unfixed {
+  position: relative;
+  transform: translateY(0);
+  @include headroom-trans;
+}
+.headroom--scrolled {
+  @include headroom-trans;
+}
+.headroom--unpinned {
+  position: fixed;
+  transform: translateY(-1520%);
+  @include headroom-trans;
+}
+.headroom--pinned {
+  position: fixed;
+  transform: translateY(0);
+  @include headroom-trans;
+  background-blend-mode: multiply;
+  background-image: url("../../images/fake_luxury_@2X.png");
+  background-color: $primary;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+}

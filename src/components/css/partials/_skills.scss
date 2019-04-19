@@ -19,12 +19,17 @@
     .skill-logo {
       margin: 1.5rem;
       height: 4rem;
+      opacity: .80;
+      filter: brightness(100%) drop-shadow(4px 4px 3px #398494);
     }
 
     .skill-transition {
       transition: all 0.5s ease;
+
       &:hover {
+        filter: brightness(110%) drop-shadow(6px 6px 6px #3B8999);
         transform: scale(1.5);
+        opacity: 1;
       }
     }
   }
