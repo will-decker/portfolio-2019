@@ -1,0 +1,50 @@
+[
+  {
+    "img": "item1.png",
+    "title": "Become Organized",
+    "category": "Web Design",
+    "description": "Custom made website for a dentist practice. Focus is on simple design, and allowing the business to edit information on the fly with a CMS. Built using Contentful and Gatsby.",
+    "link": "https://tandlaegehuset-havdrup.netlify.com/",
+    "github": "https://github.com/will-decker"
+  },
+  {
+    "img": "item1.png",
+    "title": "Childish Gambino",
+    "category": "Web Design",
+    "description": "Improved the website of psychotherapist Henriette Galst. Work included design optimizations and improving the CMS experience. Built with WordPress.",
+    "link": "http://www.henriettegalst.dk/",
+    "github": "https://github.com/will-decker"
+  },
+  {
+    "img": "item3.png",
+    "title": "Chrome Extension",
+    "category": "Web Development",
+    "description": "A website to support my online IT support business. The page serves as a way for customers to get in touch. Developed using Gatsby and TailwindCSS.",
+    "link": "https://it-fixer.dk",
+    "github": "https://github.com/will-decker"
+  },
+  {
+    "img": "item4.png",
+    "title": "Motion Design Reel",
+    "category": "Animation",
+    "description": "A webapp to browse subreddits that are interesting to the user by taking posts from a list of subreddits and sorting them by upvotes.",
+    "link": "https://reddit-browser.netlify.com/",
+    "github": "https://github.com/will-decker"
+  },
+  {
+    "img": "item5.png",
+    "title": "Cricket All-Stars",
+    "category": "Animation",
+    "description": "Search for Youtube videos and download them directly on to your machine. Uses a NodeJS server on the backend, with Vue and TailwindCSS on the frontend.",
+    "link": "https://ytdownload.netlify.com/",
+    "github": "https://github.com/will-decker"
+  },
+  {
+    "img": "item6.png",
+    "title": "MLB Network",
+    "category": "Design",
+    "description": "A movie browser with inbuilt watchlist functionality. Uses localstorage to store movies on a watchlist between browser sessions. Built with ReactJS.",
+    "link": "https://priceless-austin-5c9f85.netlify.com/",
+    "github": "https://github.com/will-decker"
+  }
+]

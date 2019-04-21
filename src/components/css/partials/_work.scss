@@ -1,8 +1,35 @@
 #work {
   height: 600px;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 50px;
   // Create mixin for code below
   background-blend-mode: multiply;
   background-image: url("../../images/fake_luxury_@2X.png");
   background-color: $primary;
+  h1 {
+    font-size: 3.8em;
+  }
+
+  .work-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 75%;
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      width: 100%;
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+
+      .project {
+        background: blue;
+        height: 200px;
+      }
+    }
+  }
 }
