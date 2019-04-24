@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Intro from "../components/intro"
@@ -33,17 +34,23 @@ const IndexPage = ({ data }) => (
     <Intro />
     <About />
     <Skills />
-    <Work />
+    <Work projects={data.allProjectsJson.edges} />
     <Contact />
   </Layout>
 )
 
 export const query = graphql`
-  query ProjectQuery {
+  query {
     allProjectsJson {
       edges {
         node {
-          img
+          image {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
           title
           category
           link
