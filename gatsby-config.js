@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Will Decker - Developer & Designer`,
-    description: `A portfolio for the work of Will Decker, a Front-End Developer and Web Designer.`,
+    description: `A portfolio portfolio site for Will Decker, a Front-End Developer and Web Designer.`,
     author: `Will Decker`,
   },
   plugins: [
@@ -36,8 +36,8 @@ module.exports = {
         name: `Will Decker Developer Portfolio`,
         short_name: `Portfolio`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#3e92a3`,
+        theme_color: `#3e92a3`,
         display: `minimal-ui`,
         icon: `src/images/WD_Icon.jpg`, // This path is relative to the root of the site.
       },

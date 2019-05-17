@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Bitter|Roboto+Slab|Open+Sans:400,800");
 
 // Sass Partials
+@import "partials/_media_queries";
 @import "partials/_layout";
 @import "partials/_vars";
 @import "partials/_header";
@@ -10,6 +11,7 @@
 @import "partials/_about";
 @import "partials/_skills";
 @import "partials/_work";
+@import "partials/_project-page";
 @import "partials/_contact";
 
 html,

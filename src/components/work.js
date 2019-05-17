@@ -6,13 +6,14 @@ const Work = ({ projects }) => (
     <div className="work-container">
       <h1>Work</h1>
       <p className="lead">
-        A selection of my design, web development and animation projects
+        A selection of my web design and development projects
       </p>
       <div className="projects">
         {projects.map(project => (
           <Project key={project.node.title} project={project.node} />
         ))}
       </div>
+      <p className="lead" />
     </div>
   </section>
 )

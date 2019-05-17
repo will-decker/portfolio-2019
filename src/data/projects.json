@@ -1,50 +1,29 @@
 [
   {
-    "image": "../images/item1.png",
+    "id": "01",
+    "image": "../images/projects/BecomeOrganized_screenshot.png",
     "title": "Become Organized",
-    "category": "Web Design",
-    "description": "Custom made website for a dentist practice. Focus is on simple design, and allowing the business to edit information on the fly with a CMS. Built using Contentful and Gatsby.",
-    "link": "https://tandlaegehuset-havdrup.netlify.com/",
-    "github": "https://github.com/will-decker"
+    "description": "This is a custom made website for a professional organizing business. It was first built as a static site using Bootstrap and then converted into a dynamic WordPress theme. The conversion to a WordPress theme required me to learn and use PHP in order to add certain functionalities to the dynamic site. This included creating custom fields, allowing the business to edit information on the site, as well as building a blog section and incorporating older blog posts. I was responsible for everything from the initial design and build to final deployment of the website.",
+    "page": "projects/becomeorganized",
+    "github": "https://github.com/will-decker",
+    "link": ""
   },
   {
-    "image": "../images/item2.png",
+    "id": "02",
+    "image": "../images/projects/ChildishGambino_screenshot.png",
     "title": "Childish Gambino",
-    "category": "Web Design",
-    "description": "Improved the website of psychotherapist Henriette Galst. Work included design optimizations and improving the CMS experience. Built with WordPress.",
-    "link": "http://www.henriettegalst.dk/",
-    "github": "https://github.com/will-decker"
+    "description": "A simple one page tribute site for the rapper Childish Gambino. Features a bio section, as well as sections for his music videos and tour dates. When deciding on how to build the site, I knew I wanted to focus on becoming more comfortable with making the site responsive without using a CSS framework, like Bootstrap.  It was also an opportunity to get more familiar with Flexbox and CSS Grid.",
+    "page": "projects/childishgambino",
+    "github": "https://github.com/will-decker/music-artist-site",
+    "link": "https://will-decker.github.io/music-artist-site/"
   },
   {
-    "image": "../images/item3.png",
-    "title": "Chrome Extension",
-    "category": "Web Development",
+    "id": "03",
+    "image": "../images/projects/Portfolio_screenshot.png",
+    "title": "Portfolio",
     "description": "A website to support my online IT support business. The page serves as a way for customers to get in touch. Developed using Gatsby and TailwindCSS.",
-    "link": "https://it-fixer.dk",
-    "github": "https://github.com/will-decker"
-  },
-  {
-    "image": "../images/item4.png",
-    "title": "Motion Design Reel",
-    "category": "Animation",
-    "description": "A webapp to browse subreddits that are interesting to the user by taking posts from a list of subreddits and sorting them by upvotes.",
-    "link": "https://reddit-browser.netlify.com/",
-    "github": "https://github.com/will-decker"
-  },
-  {
-    "image": "../images/item5.png",
-    "title": "Cricket All-Stars",
-    "category": "Animation",
-    "description": "Search for Youtube videos and download them directly on to your machine. Uses a NodeJS server on the backend, with Vue and TailwindCSS on the frontend.",
-    "link": "https://ytdownload.netlify.com/",
-    "github": "https://github.com/will-decker"
-  },
-  {
-    "image": "../images/item6.png",
-    "title": "MLB Network",
-    "category": "Design",
-    "description": "A movie browser with inbuilt watchlist functionality. Uses localstorage to store movies on a watchlist between browser sessions. Built with ReactJS.",
-    "link": "https://priceless-austin-5c9f85.netlify.com/",
-    "github": "https://github.com/will-decker"
+    "page": "projects/portfolio",
+    "github": "https://github.com/will-decker",
+    "link": ""
   }
 ]
