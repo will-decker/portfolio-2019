@@ -1,14 +1,14 @@
 #intro {
   display: flex;
-  height: 800px;
+  height: 100vh;
   width: 100%;
   background-blend-mode: multiply;
   background-image: url("../../images/fake_luxury_@2X.png");
   background-color: $primary;
 
-  @include mq(768) {
-    height: 100vh;
-  }
+  // @include mq(768) {
+  //   height: 100vh;
+  // }
 
   .intro-container {
     width: 100%;

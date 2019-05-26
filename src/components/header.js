@@ -1,34 +1,40 @@
 import { Link } from "gatsby"
 import React from "react"
 import Headroom from "react-headroom"
+import DrawerToggleButton from "./MenuOverlay/drawerToggleButton"
 import logo from "../images/wd_logo.svg"
 
 class Header extends React.Component {
-
   render() {
     return (
       <Headroom calcHeightOnResize disableInlineStyles>
         <nav className="navbar">
-          <ul>
-            <li>
-              <Link to="/#about">About</Link>
-            </li>
-            <li>
-              <Link to="/#work">Work</Link>
-            </li>
-            <li>
-              <Link to="/#contact">Contact</Link>
-            </li>
-          </ul>
+          <div className="logo">
+            <Link to="/">
+              <img src={logo} alt="logo" />
+            </Link>
+          </div>
+          <div className="spacer" />
+          <div className="navbar-menu">
+            <ul>
+              <li>
+                <Link to="/#about">About</Link>
+              </li>
+              <li>
+                <Link to="/#work">Work</Link>
+              </li>
+              <li>
+                <Link to="/#contact">Contact</Link>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <DrawerToggleButton click={this.props.overlayClickHandler} />
+          </div>
         </nav>
-        <div className="logo">
-          <Link to="/">
-            <img src={logo} alt="logo" />
-          </Link>
-        </div>
       </Headroom>
-    );
+    )
   }
-} 
+}
 
 export default Header

@@ -7,19 +7,12 @@ import {
   IoIosArrowDropleftCircle,
   IoIosArrowDroprightCircle,
 } from "react-icons/io"
-import {
-  DiHtml5,
-  DiCss3,
-  DiJqueryLogo,
-  DiPhp,
-  DiWordpress,
-  DiBootstrap,
-} from "react-icons/di"
+import { DiHtml5, DiCss3, DiJqueryLogo } from "react-icons/di"
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 
-const BecomeOrganized = () => (
+const Portfolio = () => (
   <StaticQuery
     query={graphql`
       query {
@@ -29,7 +22,7 @@ const BecomeOrganized = () => (
               id
               image {
                 childImageSharp {
-                  fluid(maxWidth: 1150) {
+                  fluid(maxWidth: 1150, quality: 75) {
                     ...GatsbyImageSharpFluid
                   }
                 }
@@ -50,37 +43,33 @@ const BecomeOrganized = () => (
           <div className="container">
             <div className="projects-nav">
               <div className="projects-nav-link">
-                <Link to="/">
-                  <IoIosArrowDropleftCircle /> Back Home
+                <Link to="/projects/childishgambino">
+                  <IoIosArrowDropleftCircle /> Previous Project
                 </Link>
               </div>
               <div className="spacer" />
-              <div className="projects-nav-link">
-                <Link to="/projects/childishgambino">
-                  Next Project <IoIosArrowDroprightCircle />
+              <div className="projects-nav-link right">
+                <Link to="/">
+                  Back To Portfolio <IoIosArrowDroprightCircle />
                 </Link>
               </div>
             </div>
             <div className="project-image">
               <Img
                 fluid={
-                  data.allProjectsJson.edges[0].node.image.childImageSharp.fluid
+                  data.allProjectsJson.edges[2].node.image.childImageSharp.fluid
                 }
                 style={{ height: 450 }}
               />
             </div>
-            <h1>Become Organized Website</h1>
+            <h1>Web Developer Portfolio</h1>
             <div className="info">
               <div className="buttons">
-                <a
-                  href={data.allProjectsJson.edges[0].node.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="/">
                   <IoIosDesktop /> Visit Site
                 </a>
                 <a
-                  href={data.allProjectsJson.edges[0].node.github}
+                  href={data.allProjectsJson.edges[2].node.github}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -88,7 +77,7 @@ const BecomeOrganized = () => (
                 </a>
               </div>
             </div>
-            <p>{data.allProjectsJson.edges[0].node.description}</p>
+            <p>{data.allProjectsJson.edges[2].node.description}</p>
 
             <div className="technologies">
               <h3>Built Using</h3>
@@ -101,16 +90,7 @@ const BecomeOrganized = () => (
                   <DiCss3 />
                 </div>
                 <div className="icon">
-                  <DiBootstrap />
-                </div>
-                <div className="icon">
                   <DiJqueryLogo />
-                </div>
-                <div className="icon">
-                  <DiPhp />
-                </div>
-                <div className="icon">
-                  <DiWordpress />
                 </div>
               </div>
             </div>
@@ -121,4 +101,4 @@ const BecomeOrganized = () => (
   />
 )
 
-export default BecomeOrganized
+export default Portfolio

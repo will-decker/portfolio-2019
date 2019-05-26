@@ -1,6 +1,8 @@
 import React from "react"
 import Project from "./work/project"
 
+import { FaArrowAltCircleRight } from "react-icons/fa"
+
 const Work = ({ projects }) => (
   <section id="work">
     <div className="work-container">
@@ -13,7 +15,16 @@ const Work = ({ projects }) => (
           <Project key={project.node.title} project={project.node} />
         ))}
       </div>
-      <p className="lead" />
+      <p className="lead">
+        You can also find my motion design and animation work{" "}
+        <a
+          href="http://willdecker.myportfolio.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          here <FaArrowAltCircleRight />
+        </a>
+      </p>
     </div>
   </section>
 )

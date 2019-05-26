@@ -65,10 +65,18 @@ const ChildishGambino = () => (
             <h1>Childish Gambino Tribute Site</h1>
             <div className="info">
               <div className="buttons">
-                <a href="#">
+                <a
+                  href={data.allProjectsJson.edges[1].node.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <IoIosDesktop /> Visit Site
                 </a>
-                <a href={data.allProjectsJson.edges[1].node.github}>
+                <a
+                  href={data.allProjectsJson.edges[1].node.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <IoIosCode /> Code
                 </a>
               </div>

@@ -10,6 +10,10 @@
       flex: 1;
     }
 
+    .right a {
+      text-align: right;
+    }
+
     .projects-nav-link {
       margin: 20px 0;
 
@@ -37,7 +41,7 @@
 }
 
 #portfolio-projects {
-  padding: 100px 15px;
+  padding: 135px 15px 75px;
 }
 #portfolio-projects .project-image {
   width: 100%;

@@ -6,7 +6,7 @@
     "description": "This is a custom made website for a professional organizing business. It was first built as a static site using Bootstrap and then converted into a dynamic WordPress theme. The conversion to a WordPress theme required me to learn and use PHP in order to add certain functionalities to the dynamic site. This included creating custom fields, allowing the business to edit information on the site, as well as building a blog section and incorporating older blog posts. I was responsible for everything from the initial design and build to final deployment of the website.",
     "page": "projects/becomeorganized",
     "github": "https://github.com/will-decker",
-    "link": ""
+    "link": "https://becomeorganized.net/"
   },
   {
     "id": "02",

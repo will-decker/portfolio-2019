@@ -17,6 +17,20 @@
   .lead {
     font-size: 1.4em;
     margin-bottom: 50px;
+
+    a {
+      color: $highlight;
+      text-decoration: none;
+
+      &:visited {
+        color: $highlight;
+      }
+
+      svg {
+        width: 0.8em;
+        height: 0.8em;
+      }
+    }
   }
 
   .work-container {
@@ -28,6 +42,7 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       width: 100%;
+      margin-bottom: 50px;
 
       @include mq(768) {
         grid-template-columns: 1fr;
@@ -47,7 +62,7 @@
     position: absolute;
     display: block;
     background: $highlight;
-    opacity: 0.9;
+    opacity: 0.8;
     top: 0;
     left: 0;
     width: 100%;

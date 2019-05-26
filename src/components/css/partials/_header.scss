@@ -10,61 +10,71 @@
   .navbar {
     display: flex;
     align-items: center;
-    list-style: none;
     width: 100%;
 
-    ul {
-      margin: 0;
-      padding: 0;
-      display: flex;
-
-      li {
-        display: flex;
-        align-items: center;
-        height: 60px;
-        padding: 0 0.9rem;
+    .logo {
+      align-self: center;
+      margin-left: 0.5rem;
+      img {
+        width: 125px;
         margin: 0;
-
-        a {
-          text-decoration: none;
-          text-transform: uppercase;
-          cursor: pointer;
-          color: $text;
-          transition: 0.5s;
-
-          &:before {
-            content: "";
-            position: absolute;
-            top: 1.6rem;
-            display: block;
-            width: 0%;
-            border-top: 3px solid $highlight;
-            transition: 0.5s;
-          }
-          &:hover:before {
-            width: 1.5%;
-          }
-          &:hover {
-            color: $highlight;
-          }
-
-          &:active {
-            color: $highlight;
-          }
-        }
       }
     }
 
     .spacer {
       flex: 1;
     }
-  }
 
-  .logo {
-    align-self: center;
-    img {
-      width: 125px;
-      margin: 0;
+    .navbar-menu {
+      display: flex;
+      align-items: center;
+      list-style: none;
+
+      @include mq(768) {
+        display: none;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+
+        li {
+          display: flex;
+          align-items: center;
+          height: 60px;
+          padding: 0 0.9rem;
+          margin: 0;
+
+          a {
+            text-decoration: none;
+            text-transform: uppercase;
+            cursor: pointer;
+            color: $text;
+            transition: 0.5s;
+
+            &:before {
+              content: "";
+              position: absolute;
+              top: 3.2rem;
+              display: block;
+              width: 0%;
+              border-top: 3px solid $highlight;
+              transition: 0.5s;
+            }
+            &:hover:before {
+              width: 1.5%;
+            }
+            &:hover {
+              color: $highlight;
+            }
+
+            &:active {
+              color: $highlight;
+            }
+          }
+        }
+      }
     }
   }
 }
