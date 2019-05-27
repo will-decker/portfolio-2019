@@ -16,6 +16,10 @@
   visibility: hidden;
   transition: opacity 0.5s ease-in-out;
 
+  @media (min-width: 769px) {
+    display: none;
+  }
+
   svg {
     width: 5.7em;
     height: 5.7em;

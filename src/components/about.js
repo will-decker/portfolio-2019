@@ -13,8 +13,8 @@ const About = () => (
           I’m Will Decker, a designer, developer and animator based in New
           Jersey. I have over a decade of experience freelancing as a motion
           designer in New York City. Recently, I expanded my skillset to include
-          web design and development. I love learning new things, problem
-          solving and creating.
+          web design and development. I love to learn new skills or techniques
+          that inspire me to create cool things.
         </p>
       </div>
     </div>
