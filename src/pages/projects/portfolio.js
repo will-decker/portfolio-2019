@@ -7,7 +7,7 @@ import {
   IoIosArrowDropleftCircle,
   IoIosArrowDroprightCircle,
 } from "react-icons/io"
-import { DiHtml5, DiCss3, DiJqueryLogo } from "react-icons/di"
+import { DiHtml5, DiSass, DiReact } from "react-icons/di"
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
@@ -87,10 +87,10 @@ const Portfolio = () => (
                   <DiHtml5 />
                 </div>
                 <div className="icon">
-                  <DiCss3 />
+                  <DiSass />
                 </div>
                 <div className="icon">
-                  <DiJqueryLogo />
+                  <DiReact />
                 </div>
               </div>
             </div>

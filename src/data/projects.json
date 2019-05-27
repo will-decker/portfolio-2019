@@ -3,7 +3,7 @@
     "id": "01",
     "image": "../images/projects/BecomeOrganized_screenshot.png",
     "title": "Become Organized",
-    "description": "This is a custom made website for a professional organizing business. It was first built as a static site using Bootstrap and then converted into a dynamic WordPress theme. The conversion to a WordPress theme required me to learn and use PHP in order to add certain functionalities to the dynamic site. This included creating custom fields, allowing the business to edit information on the site, as well as building a blog section and incorporating older blog posts. I was responsible for everything from the initial design and build to final deployment of the website.",
+    "description": "This is a custom made website for a professional organizing business. Built as a static site using Bootstrap and then converted into a dynamic WordPress theme. The conversion to a WordPress theme required me to learn and use PHP to add functionalities to the site.  This included creating custom fields, allowing the client to edit information. I also added a blog section and integrated the client's Mailchimp mailing list sign up into the theme.",
     "page": "projects/becomeorganized",
     "github": "https://github.com/will-decker",
     "link": "https://becomeorganized.net/"
@@ -12,7 +12,7 @@
     "id": "02",
     "image": "../images/projects/ChildishGambino_screenshot.png",
     "title": "Childish Gambino",
-    "description": "A simple one page tribute site for the rapper Childish Gambino. Features a bio section, as well as sections for his music videos and tour dates. When deciding on how to build the site, I knew I wanted to focus on becoming more comfortable with making the site responsive without using a CSS framework, like Bootstrap.  It was also an opportunity to get more familiar with Flexbox and CSS Grid.",
+    "description": "A simple one page tribute site for the rapper Childish Gambino. It features a bio section, as well as sections for his music videos and tour dates. I focused on becoming more comfortable with responsive design, without a CSS framework.  It was also an opportunity to get more familiar with Flexbox and CSS Grid. The interactive animations were developed with JQuery. I designed the site in Photoshop first and then converted that design into HTML and CSS.",
     "page": "projects/childishgambino",
     "github": "https://github.com/will-decker/music-artist-site",
     "link": "https://will-decker.github.io/music-artist-site/"
@@ -21,9 +21,9 @@
     "id": "03",
     "image": "../images/projects/Portfolio_screenshot.png",
     "title": "Portfolio",
-    "description": "A website to support my online IT support business. The page serves as a way for customers to get in touch. Developed using Gatsby and TailwindCSS.",
+    "description": "One of my goals was to improve my skills with React and other modern front-end technologies. To do this, I decided that the static site generator Gatsby would be perfect to learn and build my portfolio. I felt it’d be a good way to challenge myself and use everything I’ve learned so far. Also, I liked that Gatsby would allow me to create a fast site that I could add features to and keep updated.",
     "page": "projects/portfolio",
     "github": "https://github.com/will-decker",
-    "link": ""
+    "link": "/"
   }
 ]
