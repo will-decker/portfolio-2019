@@ -50,8 +50,8 @@ const BecomeOrganized = () => (
           <div className="container">
             <div className="projects-nav">
               <div className="projects-nav-link">
-                <Link to="/">
-                  <IoIosArrowDropleftCircle /> Back Home
+                <Link to="/#work">
+                  <IoIosArrowDropleftCircle /> Back to Portfolio
                 </Link>
               </div>
               <div className="spacer" />

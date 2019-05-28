@@ -6,8 +6,8 @@
   background-image: url("../../images/fake_luxury_@2X.png");
   background-color: $primary;
 
-  // @include mq(768) {
-  //   height: 100vh;
+  // @include mq(480) {
+  //   height: 700px;
   // }
 
   .intro-container {
@@ -68,6 +68,14 @@
 
     .intro-avatar {
       width: 15rem;
+
+      @include mq(768) {
+        width: 12rem;
+      }
+
+      @include mq(480) {
+        width: 8rem;
+      }
     }
   }
 }

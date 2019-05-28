@@ -1,6 +1,10 @@
 .headroom {
   width: 100%;
   padding: 3rem 3rem 1.3rem 3rem;
+
+  @include mq(480) {
+    padding: 1.8rem 2rem 1.3rem 2rem;
+  }
 }
 
 .headroom--unfixed {

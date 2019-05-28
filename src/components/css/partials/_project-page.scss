@@ -111,9 +111,13 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 50%;
+  width: 75%;
   margin: 0 auto;
   padding: 75px 0;
+
+  @include mq(768) {
+    width: 100%;
+  }
 }
 #portfolio-projects h3 {
   font-family: "Roboto Slab", serif;
@@ -142,9 +146,6 @@
   width: 4em;
   max-width: 200px;
 }
-#portfolio-projects .video {
-  text-align: center;
-}
 
 @media only screen and (max-width: 960px) {
   #portfolio-projects h1 {
@@ -168,9 +169,5 @@
   }
   #portfolio-projects .info .buttons a {
     margin-bottom: 10px;
-  }
-  #portfolio-projects .technologies .icons {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
   }
 }

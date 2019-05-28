@@ -49,7 +49,7 @@ const Portfolio = () => (
               </div>
               <div className="spacer" />
               <div className="projects-nav-link right">
-                <Link to="/">
+                <Link to="/#work">
                   Back To Portfolio <IoIosArrowDroprightCircle />
                 </Link>
               </div>

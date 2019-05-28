@@ -3,7 +3,7 @@
     "id": "01",
     "image": "../images/projects/BecomeOrganized_screenshot.png",
     "title": "Become Organized",
-    "description": "This is a custom made website for a professional organizing business. Built as a static site using Bootstrap and then converted into a dynamic WordPress theme. The conversion to a WordPress theme required me to learn and use PHP to add functionalities to the site.  This included creating custom fields, allowing the client to edit information. I also added a blog section and integrated the client's Mailchimp mailing list sign up into the theme.",
+    "description": "This is a custom made website for a professional organizing business. Built as a static site using Bootstrap and then converted into a dynamic WordPress theme. The conversion to a WordPress theme required me to learn and use PHP to add features to the site. This included creating custom fields, allowing the client to edit information. I also added a blog section and integrated sign up for the client's Mailchimp mailing list into the theme.",
     "page": "projects/becomeorganized",
     "github": "https://github.com/will-decker",
     "link": "https://becomeorganized.net/"
@@ -21,7 +21,7 @@
     "id": "03",
     "image": "../images/projects/Portfolio_screenshot.png",
     "title": "Portfolio",
-    "description": "One of my goals was to improve my skills with React and other modern front-end technologies. To do this, I decided that the static site generator Gatsby would be perfect to learn and build my portfolio. I felt it’d be a good way to challenge myself and use everything I’ve learned so far. Also, I liked that Gatsby would allow me to create a fast site that I could add features to and keep updated.",
+    "description": "One of my goals was to improve my skills with React and other modern front-end technologies. To do this, I found that the static site generator Gatsby would be perfect to learn and build my portfolio. I felt it’d be a good way to challenge myself and use everything I’ve learned so far. Also, I liked that Gatsby would allow me to develop a fast site that I could add features to and keep updated.",
     "page": "projects/portfolio",
     "github": "https://github.com/will-decker",
     "link": "/"

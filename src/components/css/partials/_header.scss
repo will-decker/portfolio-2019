@@ -18,6 +18,10 @@
       img {
         width: 125px;
         margin: 0;
+
+        @include mq(480) {
+          width: 100px;
+        }
       }
     }
 

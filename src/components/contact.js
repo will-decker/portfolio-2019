@@ -8,9 +8,9 @@ const Contact = () => (
         <h1>Contact Me</h1>
         <h3>
           I'd love to hear from you! I'm currently available for freelance
-          projects and also interested in full-time positions.
+          projects and interested in full-time positions.
         </h3>
-        <h3>Here's how you can reach me</h3>
+        <h3>Here's how you can reach me:</h3>
       </div>
       <div className="contact-info">
         <div className="email">

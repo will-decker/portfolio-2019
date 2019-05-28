@@ -1,0 +1,31 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #3e92a3;
+  padding: 25px 10px;
+
+  .social-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    max-width: 400px;
+    margin-bottom: 10px;
+
+    a {
+      font-size: 3rem;
+      color: $text;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+      display: inline-block;
+      padding: 10px;
+    }
+  }
+
+  p {
+    text-align: center;
+    margin: 0 auto;
+  }
+}

@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import MenuOverlay from "../components/MenuOverlay/menuOverlay"
+import Footer from "../components/footer"
 
 import Header from "./header"
 
@@ -73,11 +74,7 @@ class Layout extends Component {
               overlayClickHandler={this.overlayToggleClickHandler}
             />
             <main style={{ height: "100%" }}>{children}</main>
-            <footer style={ftrStyles}>
-              <p style={pStyles}>
-                © {new Date().getFullYear()}, Designed & Coded by Will Decker
-              </p>
-            </footer>
+            <Footer />
           </>
         )}
       />
