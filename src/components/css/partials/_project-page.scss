@@ -41,7 +41,11 @@
 }
 
 #portfolio-projects {
-  padding: 135px 15px 75px;
+  padding: 200px 15px 50px;
+
+  @include mq(480) {
+    padding-top: 100px;
+  }
 }
 #portfolio-projects .project-image {
   width: 100%;
@@ -113,7 +117,7 @@
   flex-direction: column;
   width: 75%;
   margin: 0 auto;
-  padding: 75px 0;
+  padding: 50px 0;
 
   @include mq(768) {
     width: 100%;

@@ -1,10 +1,10 @@
 import { Link } from "gatsby"
-import React from "react"
+import React, { Component } from "react"
 import Headroom from "react-headroom"
-import DrawerToggleButton from "./MenuOverlay/drawerToggleButton"
+import DrawerToggleButton from "./MenuOverlay/drawertogglebutton"
 import logo from "../images/wd_logo.svg"
 
-class Header extends React.Component {
+class Header extends Component {
   render() {
     return (
       <Headroom calcHeightOnResize disableInlineStyles>
