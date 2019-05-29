@@ -1,13 +1,13 @@
 import React, { Component } from "react"
 import { graphql } from "gatsby"
 
-import Layout from "../components/Layout"
-import SEO from "../components/Seo"
-import Intro from "../components/Intro"
-import About from "../components/About"
-import Skills from "../components/Skills"
-import Work from "../components/Work"
-import Contact from "../components/Contact"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import Intro from "../components/intro"
+import About from "../components/about"
+import Skills from "../components/skills"
+import Work from "../components/work"
+import Contact from "../components/contact"
 
 import "../components/css/main.scss"
 
