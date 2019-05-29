@@ -16,8 +16,8 @@ import {
   DiBootstrap,
 } from "react-icons/di"
 
-import Layout from "../../components/layout"
-import SEO from "../../components/seo"
+import Layout from "../../components/Layout"
+import SEO from "../../components/Seo"
 
 const BecomeOrganized = () => (
   <StaticQuery
@@ -45,7 +45,7 @@ const BecomeOrganized = () => (
     `}
     render={data => (
       <Layout>
-        <SEO title="Become Organized Website" />
+        <SEO title="Project | Become Organized Website" />
         <section id="portfolio-projects">
           <div className="container">
             <div className="projects-nav">
@@ -55,7 +55,7 @@ const BecomeOrganized = () => (
                 </Link>
               </div>
               <div className="spacer" />
-              <div className="projects-nav-link">
+              <div className="projects-nav-link right">
                 <Link to="/projects/childishgambino">
                   Next Project <IoIosArrowDroprightCircle />
                 </Link>

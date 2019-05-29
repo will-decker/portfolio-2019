@@ -12,6 +12,10 @@
 
     .right a {
       text-align: right;
+
+      @include mq(480) {
+        display: none;
+      }
     }
 
     .projects-nav-link {

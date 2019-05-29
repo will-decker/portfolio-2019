@@ -1,8 +1,8 @@
 import React, { Component } from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
-import MenuOverlay from "./MenuOverlay/menuoverlay"
-import Footer from "../components/footer"
+import MenuOverlay from "./MenuOverlay/Menuoverlay"
+import Footer from "../components/Footer"
 
 import Header from "./header"
 

@@ -1,5 +1,5 @@
 import React from "react"
-import Project from "./work/project"
+import Project from "./work/Project"
 
 import { FaArrowAltCircleRight } from "react-icons/fa"
 

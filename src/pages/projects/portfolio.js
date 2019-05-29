@@ -9,8 +9,8 @@ import {
 } from "react-icons/io"
 import { DiHtml5, DiSass, DiReact } from "react-icons/di"
 
-import Layout from "../../components/layout"
-import SEO from "../../components/seo"
+import Layout from "../../components/Layout"
+import SEO from "../../components/Seo"
 
 const Portfolio = () => (
   <StaticQuery
@@ -38,7 +38,7 @@ const Portfolio = () => (
     `}
     render={data => (
       <Layout>
-        <SEO title="Become Organized Website" />
+        <SEO title="Project | Web Developer Portfolio" />
         <section id="portfolio-projects">
           <div className="container">
             <div className="projects-nav">
