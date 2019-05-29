@@ -141,14 +141,7 @@
   align-items: center;
   justify-items: center;
 }
-#portfolio-projects .technologies .icons svg {
-  filter: grayscale(100%);
-  transition: all 0.3s ease-in-out;
-  // cursor: pointer;
-}
-#portfolio-projects .technologies .icons svg:hover {
-  filter: grayscale(0);
-}
+
 #portfolio-projects .technologies .icons .icon svg {
   height: 4em;
   width: 4em;
@@ -165,9 +158,6 @@
   }
   #portfolio-projects h3 {
     text-align: center;
-  }
-  #portfolio-projects .video iframe {
-    width: 100% !important;
   }
 }
 /* Phones */
