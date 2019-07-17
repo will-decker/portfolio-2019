@@ -19,8 +19,8 @@
         width: 125px;
         margin: 0;
 
-        @include mq(480) {
-          width: 100px;
+        @include mq(768) {
+          width: 85px;
         }
       }
     }

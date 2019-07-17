@@ -17,10 +17,14 @@
     justify-content: center;
     align-items: center;
 
-    @include mq(768) {
+    @include mq(1140) {
       flex-direction: column-reverse;
       justify-content: center;
       text-align: center;
+    }
+
+    @media only screen and (max-width: 900px) and (orientation: landscape) {
+      flex-direction: row;
     }
 
     .intro-text {
@@ -34,6 +38,12 @@
 
       @include mq(320) {
         width: 325px;
+      }
+
+      @media only screen and (max-width: 900px) and (orientation: landscape)
+      {
+        width: 390px;
+        margin: 0;
       }
 
       h1 {
@@ -50,6 +60,11 @@
           font-size: 3em;
           line-height: 75px;
         }
+
+        @media only screen and (max-width: 900px) and (orientation: landscape) {
+          font-size: 3.3em;
+          margin: 0;
+        }
       }
 
       h2 {
@@ -61,6 +76,10 @@
         }
 
         @include mq(320) {
+          font-size: 1.4em;
+        }
+
+        @media only screen and (max-width: 900px) and (orientation: landscape) {
           font-size: 1.4em;
         }
       }
@@ -75,6 +94,14 @@
 
       @include mq(480) {
         width: 8rem;
+      }
+
+      @media only screen and (max-width: 900px) and (orientation: landscape){
+        width: 8rem;
+
+        img {
+          margin: 0;
+        }
       }
     }
   }
