@@ -60,14 +60,14 @@
             &:before {
               content: "";
               position: absolute;
-              top: 3.2rem;
+              top: 2rem;
               display: block;
               width: 0%;
               border-top: 3px solid $highlight;
               transition: 0.5s;
             }
             &:hover:before {
-              width: 1.5%;
+              width: 2%;
             }
             &:hover {
               color: $highlight;
