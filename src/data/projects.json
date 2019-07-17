@@ -21,7 +21,7 @@
     "id": "03",
     "image": "../images/projects/SneakerShop_screenshot.png",
     "title": "The Sneaker Shop",
-    "description": "A homepage for an e-commerce site that focuses on sneakers. In order to challenge myself, I based the layout and design on some of the top sneaker e-commerce sites listed on Google. A goal of mine was to be able to build a site ",
+    "description": "A landing page for an e-commerce site focusing on sneakers. The layout and design was inspired by some of the top sneaker e-commerce sites. I wanted to try and recreate my own version of these sites, making it simple and clean. Subtle interactive CSS animations were used to achieve this, as well as using some JavaScript to animate the mobile menu. The landing page is also fully responsive, keeping a consistent stylish quality on all devices.",
     "page": "projects/sneakershop",
     "github": "https://github.com/will-decker/sneakershop",
     "link": "https://will-decker.github.io/sneakershop/"

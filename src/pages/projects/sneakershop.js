@@ -59,7 +59,7 @@ const SneakerShop = () => (
                   data.allProjectsJson.edges[2].node.image.childImageSharp.fluid
                 }
                 style={{ height: 450, }}
-                imgStyle={{ objectPosition: '50% 18%', }}
+                imgStyle={{ objectPosition: '50% top', }}
               />
             </div>
             <h1>The Sneaker Shop</h1>

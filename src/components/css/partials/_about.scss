@@ -35,9 +35,12 @@
       // margin: 120px 0 0;
 
       @include mq(1024) {
-        width: 75%;
-        text-align: center;
+        width: 80%;
         font-size: 0.8em;
+      }
+
+      @include mq(768) {
+        width: 95%;
       }
 
       h1 {
