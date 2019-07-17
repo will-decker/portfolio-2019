@@ -86,7 +86,7 @@
     }
 
     .intro-avatar {
-      width: 15rem;
+      width: 13rem;
 
       @include mq(768) {
         width: 12rem;
@@ -94,6 +94,9 @@
 
       @include mq(480) {
         width: 8rem;
+        img {
+          margin: 0;
+        }
       }
 
       @media only screen and (max-width: 900px) and (orientation: landscape){
