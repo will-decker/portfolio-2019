@@ -2,12 +2,11 @@ import React from "react"
 import { Link, StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import {
-  IoIosCode,
-  IoIosDesktop,
   IoIosArrowDropleftCircle,
   IoIosArrowDroprightCircle,
 } from "react-icons/io"
 import { DiHtml5, DiSass, DiReact } from "react-icons/di"
+import { FaDesktop, FaCode } from "react-icons/fa"
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
@@ -43,7 +42,7 @@ const Portfolio = () => (
           <div className="container">
             <div className="projects-nav">
               <div className="projects-nav-link">
-                <Link to="/projects/childishgambino">
+                <Link to="/projects/focustimer">
                   <IoIosArrowDropleftCircle /> Previous Project
                 </Link>
               </div>
@@ -57,7 +56,7 @@ const Portfolio = () => (
             <div className="project-image">
               <Img
                 fluid={
-                  data.allProjectsJson.edges[2].node.image.childImageSharp.fluid
+                  data.allProjectsJson.edges[4].node.image.childImageSharp.fluid
                 }
                 style={{ height: 450 }}
               />
@@ -66,18 +65,18 @@ const Portfolio = () => (
             <div className="info">
               <div className="buttons">
                 <a href="/">
-                  <IoIosDesktop /> Visit Site
+                  <FaDesktop /> Visit Site
                 </a>
                 <a
-                  href={data.allProjectsJson.edges[2].node.github}
+                  href={data.allProjectsJson.edges[4].node.github}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <IoIosCode /> Code
+                  <FaCode /> View Code
                 </a>
               </div>
             </div>
-            <p>{data.allProjectsJson.edges[2].node.description}</p>
+            <p>{data.allProjectsJson.edges[4].node.description}</p>
 
             <div className="technologies">
               <h3>Built Using</h3>

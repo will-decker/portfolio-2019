@@ -6,7 +6,7 @@
   align-items: flex-start;
   // Create mixin for code below
   background-blend-mode: multiply;
-  background-image: url("../../images/fake_luxury_@2X.png");
+  background-image: url("../../images/fake_luxury_2X.png");
   background-color: $primary;
 
   h1 {
@@ -43,7 +43,7 @@
       width: 100%;
       margin-bottom: 50px;
 
-      @include mq(768) {
+      @include mq(1024) {
         grid-template-columns: 1fr;
       }
     }
@@ -55,6 +55,10 @@
   margin: 10px;
   overflow: hidden;
   position: relative;
+
+  @include mq(1024) {
+    margin-bottom: 50px;
+  }
 
   &::after {
     content: "";
@@ -152,4 +156,37 @@
   // &-category {
   //   text-transform: uppercase;
   // }
+}
+
+.more-work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  line-height: 1.3;
+  padding: 1.2em;
+  margin: 10px;
+  overflow: hidden;
+  position: relative;
+
+  p {
+    max-width: 350px;
+    font-size: 1.4em;
+    margin-bottom: 0;
+    text-align: center;
+  
+    a {
+      color: $highlight;
+      text-decoration: none;
+  
+      &:visited {
+        color: $highlight;
+      }
+  
+      svg {
+        width: 0.8em;
+        height: 0.8em;
+      }
+    }
+  }
 }

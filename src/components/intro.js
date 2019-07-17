@@ -1,5 +1,5 @@
 import React from "react"
-import avatar from "../images/WD_Avatar.svg"
+import avatar from "../svgs/WD_Avatar.svg"
 
 const Intro = () => (
   <section id="intro">

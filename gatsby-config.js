@@ -43,14 +43,14 @@ module.exports = {
       },
     },
     `gatsby-plugin-sass`,
-    {
-      resolve: `gatsby-plugin-react-svg`,
-      options: {
-        rule: {
-          include: /images/,
-        },
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-react-svg`,
+    //   options: {
+    //     rule: {
+    //       include: /svgs/,
+    //     },
+    //   },
+    // },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

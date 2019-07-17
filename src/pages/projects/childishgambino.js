@@ -2,12 +2,12 @@ import React from "react"
 import { Link, StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import {
-  IoIosCode,
-  IoIosDesktop,
   IoIosArrowDropleftCircle,
   IoIosArrowDroprightCircle,
 } from "react-icons/io"
 import { DiHtml5, DiCss3, DiJqueryLogo } from "react-icons/di"
+import { FaDesktop, FaCode } from "react-icons/fa"
+
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
@@ -49,7 +49,7 @@ const ChildishGambino = () => (
               </div>
               <div className="spacer" />
               <div className="projects-nav-link right">
-                <Link to="/projects/portfolio">
+                <Link to="/projects/sneakershop">
                   Next Project <IoIosArrowDroprightCircle />
                 </Link>
               </div>
@@ -59,7 +59,7 @@ const ChildishGambino = () => (
                 fluid={
                   data.allProjectsJson.edges[1].node.image.childImageSharp.fluid
                 }
-                style={{ height: 450 }}
+                style={{ height: 450, }}
               />
             </div>
             <h1>Childish Gambino Tribute Site</h1>
@@ -70,14 +70,14 @@ const ChildishGambino = () => (
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <IoIosDesktop /> Visit Site
+                  <FaDesktop /> Visit Site
                 </a>
                 <a
                   href={data.allProjectsJson.edges[1].node.github}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <IoIosCode /> Code
+                  <FaCode /> View Code
                 </a>
               </div>
             </div>

@@ -1,5 +1,5 @@
 import React from "react"
-import coder from "../images/desk_coder.svg"
+import coder from "../svgs/desk_coder.svg"
 
 const About = () => (
   <section id="about">

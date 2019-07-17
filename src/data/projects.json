@@ -3,7 +3,7 @@
     "id": "01",
     "image": "../images/projects/BecomeOrganized_screenshot.png",
     "title": "Become Organized",
-    "description": "This is a custom made website for a professional organizing business. Built as a static site using Bootstrap and then converted into a dynamic WordPress theme. The conversion to a WordPress theme required me to learn and use PHP to add features to the site. This included creating custom fields, allowing the client to edit information. I also added a blog section and integrated sign up for the client's Mailchimp mailing list into the theme.",
+    "description": "A custom made website for a professional organizing business. Built as a static site using Bootstrap and then converted into a dynamic WordPress theme. The conversion to a WordPress theme required me to learn and use PHP to add features to the site. This included creating custom fields, allowing the client to edit information. I also added a blog section and integrated sign up for the client's Mailchimp mailing list into the theme.",
     "page": "projects/becomeorganized",
     "github": "https://github.com/will-decker",
     "link": "https://becomeorganized.net/"
@@ -19,9 +19,27 @@
   },
   {
     "id": "03",
+    "image": "../images/projects/SneakerShop_screenshot.png",
+    "title": "The Sneaker Shop",
+    "description": "A homepage for an e-commerce site that focuses on sneakers. In order to challenge myself, I based the layout and design on some of the top sneaker e-commerce sites listed on Google. A goal of mine was to be able to build a site ",
+    "page": "projects/sneakershop",
+    "github": "https://github.com/will-decker/sneakershop",
+    "link": "https://will-decker.github.io/sneakershop/"
+  },
+  {
+    "id": "04",
+    "image": "../images/projects/FocusTimer_screenshot.png",
+    "title": "Focus Timer",
+    "description": "This is my version of a Pomodoro Timer. The user is able to select different timers based on the Pomodoro Technique, as well as an extended and custom timer. When the timer hits zero an alarm sounds, letting the user know the focus session or break has ended. Since it was a simple app, I also focused on adding features such as a message letting the user know when the timer would end, displaying the timer in the page title and making the app fully responsive.",
+    "page": "projects/focustimer",
+    "github": "https://github.com/will-decker/focus-timer",
+    "link": "https://will-decker.github.io/focus-timer/"
+  },
+  {
+    "id": "05",
     "image": "../images/projects/Portfolio_screenshot.png",
     "title": "Portfolio",
-    "description": "While building my portfolio site, one of my goals was to improve my skills with React and other modern front-end technologies. I found that the static site generator Gatsby would be perfect for this. It was a great way to challenge myself and get more experience building a site from the ground up with React, Webpack and Node,js. Gatsby also makes it easy to add more features and update my site in the future.",
+    "description": "A portfolio site to showcase my web design and development projects. One of my goals, when building my portfolio, was to improve my skills with React and other modern front-end technologies. I found that the static site generator Gatsby would be perfect for this. It was a great way to challenge myself and get more experience building a site from the ground up with React, Webpack and NodeJS. Gatsby also makes it easy to add more features and update my site in the future.",
     "page": "projects/portfolio",
     "github": "https://github.com/will-decker/portfolio-2019",
     "link": "/"

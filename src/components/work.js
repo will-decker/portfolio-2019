@@ -14,17 +14,19 @@ const Work = ({ projects }) => (
         {projects.map(project => (
           <Project key={project.node.title} project={project.node} />
         ))}
+        <div className="more-work">
+          <p>
+            Check out my motion design and animation work{" "}
+            <a
+              href="http://willdecker.myportfolio.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="cta-arrow">here <FaArrowAltCircleRight /></span>
+            </a>
+          </p>
+        </div>
       </div>
-      <p className="lead">
-        You can also find my motion design and animation work{" "}
-        <a
-          href="http://willdecker.myportfolio.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          here <FaArrowAltCircleRight />
-        </a>
-      </p>
     </div>
   </section>
 )

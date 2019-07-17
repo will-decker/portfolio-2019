@@ -6,6 +6,7 @@
   "author": "Will Decker <willdecker@gmail.com>",
   "dependencies": {
     "gatsby": "^2.3.24",
+    "gatsby-cli": "^2.7.15",
     "gatsby-image": "^2.0.38",
     "gatsby-plugin-manifest": "^2.0.29",
     "gatsby-plugin-offline": "^2.0.25",
