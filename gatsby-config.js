@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Will Decker - Developer & Designer`,
-    description: `A portfolio portfolio site for Will Decker, a Front-End Developer and Web Designer.`,
+    description: `A portfolio site for Will Decker, a Front-End Developer and Web Designer.`,
     author: `Will Decker`,
   },
   plugins: [
