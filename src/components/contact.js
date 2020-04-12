@@ -10,7 +10,7 @@ const Contact = () => (
           I'd love to hear from you! I'm currently available for freelance
           projects and interested in full-time positions.
         </h3>
-        <h3>Here's how you can reach me:</h3>
+        <h3></h3>
       </div>
       <div className="contact-info">
         <div className="email">
