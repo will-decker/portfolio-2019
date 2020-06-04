@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import { IoIosClose } from "react-icons/io"
-import "../../components/css/menuoverlay.scss"
+import "./css/menuoverlay.scss"
 
 const MenuOverlay = props => {
   let overlayClasses = "menu-overlay"

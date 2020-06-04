@@ -1,5 +1,5 @@
 import React from "react"
-import Project from "./work/Project"
+import Project from "./project"
 
 import { FaArrowAltCircleRight } from "react-icons/fa"
 
@@ -22,7 +22,9 @@ const Work = ({ projects }) => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span className="cta-arrow">here <FaArrowAltCircleRight /></span>
+              <span className="cta-arrow">
+                here <FaArrowAltCircleRight />
+              </span>
             </a>
           </p>
         </div>
