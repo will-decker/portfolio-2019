@@ -18,6 +18,9 @@ class Header extends Component {
           <div className="navbar-menu">
             <ul>
               <li>
+                <Link to="/blog">Blog</Link>
+              </li>
+              <li>
                 <Link to="/#about">About</Link>
               </li>
               <li>

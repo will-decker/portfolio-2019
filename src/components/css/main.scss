@@ -6,6 +6,7 @@
 @import "partials/_header";
 @import "partials/_headroom";
 @import "partials/_blog";
+@import "partials/_post";
 @import "partials/_intro";
 @import "partials/_about";
 @import "partials/_skills";
@@ -29,7 +30,8 @@ body {
     color: $accent;
   }
 
-  h2 {
+  h2,
+  h3 {
     font-family: "Roboto Slab", serif;
     color: $text;
   }

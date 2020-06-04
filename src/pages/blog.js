@@ -2,7 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { useStaticQuery, graphql } from "gatsby"
+import { Link, useStaticQuery, graphql } from "gatsby"
 
 const BlogPage = () => {
   const data = useStaticQuery(
@@ -17,6 +17,9 @@ const BlogPage = () => {
                 date
               }
               excerpt
+              fields {
+                slug
+              }
             }
           }
         }
@@ -36,9 +39,17 @@ const BlogPage = () => {
           {data.allMarkdownRemark.edges.map(post => {
             return (
               <li>
-                <p>{post.node.frontmatter.date}</p>
-                <h2>{post.node.frontmatter.title}</h2>
-                <h3>{post.node.frontmatter.subtitle}</h3>
+                <Link to={`/blog/${post.node.fields.slug}`}>
+                  <div className="post">
+                    <div>
+                      <p>{post.node.frontmatter.date}</p>
+                    </div>
+                    <div>
+                      <h2>{post.node.frontmatter.title}</h2>
+                      <h3>{post.node.frontmatter.subtitle}</h3>
+                    </div>
+                  </div>
+                </Link>
               </li>
             )
           })}
