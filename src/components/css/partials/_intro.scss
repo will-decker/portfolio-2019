@@ -10,7 +10,7 @@
   .message-container {
     width: 100%;
     display: flex;
-    margin-top: 5em;
+    // margin-top: 5em;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -20,7 +20,7 @@
       text-transform: uppercase;
       color: #dfe0d4;
       -webkit-text-fill-color: black; /* Will override color (regardless of order) */
-      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-width: 1.5px;
       -webkit-text-stroke-color: white;
       font-size: 5em;
       text-align: center;
@@ -28,9 +28,15 @@
     }
 
     p {
-      font-size: 1.5em;
-      padding-bottom: 35px;
+      font-size: 1.25em;
+      padding: 0 25px 8px;
       text-align: center;
+    }
+
+    .msg-btns {
+      display: flex;
+      width: 100%;
+      justify-content: center;
     }
 
     .donate-btn {
@@ -51,6 +57,13 @@
       -webkit-box-align: center;
       align-items: center;
       border-radius: 4px;
+      margin: 20px;
+
+      &:hover {
+        background-color: #fce21a;
+        color: black;
+        border: none;
+      }
     }
   }
 

@@ -6,10 +6,26 @@ const Intro = () => (
     <section id="blm-message">
       <div className="message-container">
         <h1>Black Lives Matter</h1>
-        <p>Support the movement against racism and police brutality.</p>
-        <a href="#" className="donate-btn">
-          Donate
-        </a>
+        <p>
+          Support the movement against racial inequality, social injustice and
+          police brutality.
+        </p>
+        <div className="msg-btns">
+          <a
+            href="https://secure.actblue.com/donate/ab_mn?refcode=tweet"
+            target="_blank"
+            className="donate-btn"
+          >
+            Donate
+          </a>
+          <a
+            href="https://blacklivesmatter.com/"
+            target="_blank"
+            className="donate-btn"
+          >
+            Learn More
+          </a>
+        </div>
       </div>
       <div className="scrolldown-msg">
         Scroll down to continue to willdecker.com
