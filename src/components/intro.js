@@ -12,14 +12,14 @@ const Intro = () => (
         </p>
         <div className="msg-btns">
           <a
-            href="https://secure.actblue.com/donate/ab_mn?refcode=tweet"
+            href="https://cutt.ly/donate-blm"
             target="_blank"
             className="donate-btn"
           >
             Donate
           </a>
           <a
-            href="https://blacklivesmatter.com/"
+            href="https://cutt.ly/blacklivesmatter-home"
             target="_blank"
             className="donate-btn"
           >
@@ -27,9 +27,7 @@ const Intro = () => (
           </a>
         </div>
       </div>
-      <div className="scrolldown-msg">
-        Scroll down to continue to willdecker.com
-      </div>
+      <div className="scrolldown-msg">Scroll down for willdecker.com</div>
     </section>
     <section id="intro">
       <div className="intro-container">
