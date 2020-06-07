@@ -1,15 +1,9 @@
 import React, { Component } from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
-<<<<<<< HEAD
 import MenuOverlay from "./menuoverlay"
 import Footer from "./footer"
 
-=======
-
-import MenuOverlay from "./MenuOverlay/menuoverlay"
-import Footer from "../components/footer"
->>>>>>> header-update
 import Header from "./header"
 
 if (typeof window !== "undefined") {
