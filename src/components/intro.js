@@ -2,19 +2,45 @@ import React from "react"
 import avatar from "../svgs/WD_Avatar.svg"
 
 const Intro = () => (
-  <section id="intro">
-    <div className="intro-container">
-      <div className="intro-text">
-        <h1>Will Decker</h1>
-        <h2>Front-End Developer</h2>
-        {""}
-        <h2>& Web Designer</h2>
+  <>
+    <section id="blm-message">
+      <div className="message-container">
+        <h1>Black Lives Matter</h1>
+        <p>
+          Support the movement against racial inequality, social injustice and
+          police brutality.
+        </p>
+        <div className="msg-btns">
+          <a
+            href="https://cutt.ly/donate-blm"
+            target="_blank"
+            className="donate-btn"
+          >
+            Donate
+          </a>
+          <a
+            href="https://cutt.ly/blacklivesmatter-home"
+            target="_blank"
+            className="donate-btn"
+          >
+            Learn More
+          </a>
+        </div>
       </div>
-      <div className="intro-avatar">
-        <img src={avatar} alt="Will Decker Avatar" />
+      <div className="scrolldown-msg">Scroll down for willdecker.com</div>
+    </section>
+    <section id="intro">
+      <div className="intro-container">
+        <div className="intro-text">
+          <h1>Will Decker</h1>
+          <h2>Web Developer</h2>
+        </div>
+        <div className="intro-avatar">
+          <img src={avatar} alt="Will Decker Avatar" />
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </>
 )
 
 export default Intro

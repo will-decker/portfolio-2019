@@ -17,6 +17,7 @@
     "gatsby-plugin-sharp": "^2.0.34",
     "gatsby-source-filesystem": "^2.2.2",
     "gatsby-transformer-json": "^2.1.11",
+    "gatsby-transformer-remark": "^2.7.3",
     "gatsby-transformer-sharp": "^2.1.18",
     "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
@@ -31,6 +32,7 @@
     "utf-8-validate": "^5.0.2"
   },
   "devDependencies": {
+    "env-cmd": "^10.1.0",
     "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.12.4",
     "graphql": "^14.6.0",
@@ -43,7 +45,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "env-cmd -f .env.development gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",

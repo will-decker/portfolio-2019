@@ -1,9 +1,15 @@
 import React, { Component } from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
+<<<<<<< HEAD
 import MenuOverlay from "./menuoverlay"
 import Footer from "./footer"
 
+=======
+
+import MenuOverlay from "./MenuOverlay/menuoverlay"
+import Footer from "../components/footer"
+>>>>>>> header-update
 import Header from "./header"
 
 if (typeof window !== "undefined") {
@@ -58,7 +64,7 @@ class Layout extends Component {
               siteTitle={data.site.siteMetadata.title}
               overlayClickHandler={this.overlayToggleClickHandler}
             />
-            <main style={{ height: "100%" }}>{children}</main>
+            <main style={{ minHeight: "100vh" }}>{children}</main>
             <Footer />
           </>
         )}

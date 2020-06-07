@@ -1,0 +1,17 @@
+.blog-header {
+  display: flex;
+  padding: 125px 150px 75px;
+  background-blend-mode: multiply;
+  background-image: url("../../images/fake_luxury_2X.png");
+  background-color: $primary;
+
+  h1 {
+    height: 1em;
+    font-size: 3.8em;
+  }
+}
+
+.posts-container {
+  @include container;
+  padding: 3em;
+}
