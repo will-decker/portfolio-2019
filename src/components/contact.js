@@ -6,23 +6,35 @@ const Contact = () => (
     <div className="container">
       <div className="contact-text">
         <h1>Contact Me</h1>
-        <h3>
-          I'd love to hear from you! I'm currently available for freelance
-          projects and interested in full-time positions.
-        </h3>
-        <h3></h3>
       </div>
-      <div className="contact-info">
-        <div className="email">
-          <FaEnvelope />
-          <h3>Email</h3>
-          <p>willdecker@gmail.com</p>
-        </div>
-        <div className="phone">
-          <FaPhone />
-          <h3>Phone</h3>
-          <p>401-749-2073</p>
-        </div>
+      <div className="contact-form">
+        <form
+          method="post"
+          netlify-honeypot="bot-field"
+          data-netlify="true"
+          name="contact"
+        >
+          <input type="hidden" name="bot-field" />
+          <input type="hidden" name="form-name" value="contact" />
+          <div className="form-group">
+            <input type="text" name="name" id="name" required />
+            <label>Name</label>
+          </div>
+          <div className="form-group">
+            <input type="email" name="email" id="email" required />
+            <label>Email</label>
+          </div>
+          <div className="form-group">
+            <input type="text" name="subject" id="subject" required />
+            <label>Subject</label>
+          </div>
+          <div className="form-group">
+            <textarea name="message" id="message" rows="5" required />
+            <label>Message</label>
+          </div>
+          <button type="submit">Send</button>
+          <input type="reset" value="Clear" />
+        </form>
       </div>
     </div>
   </section>
