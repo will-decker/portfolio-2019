@@ -10,6 +10,7 @@ import { FaDesktop, FaCode } from "react-icons/fa"
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
+import BLMBanner from "../../components/blmbanner"
 
 const FocusTimer = () => (
   <StaticQuery
@@ -38,6 +39,7 @@ const FocusTimer = () => (
     render={data => (
       <Layout>
         <SEO title="Project | Focus Timer" />
+        <BLMBanner />
         <section id="portfolio-projects">
           <div className="container">
             <div className="projects-nav">
@@ -59,7 +61,7 @@ const FocusTimer = () => (
                   data.allProjectsJson.edges[3].node.image.childImageSharp.fluid
                 }
                 style={{ height: 450 }}
-                imgStyle={{ objectPosition: '50% top', }}
+                imgStyle={{ objectPosition: "50% top" }}
               />
             </div>
             <h1>Focus Timer</h1>
@@ -68,7 +70,8 @@ const FocusTimer = () => (
                 <a
                   href={data.allProjectsJson.edges[3].node.link}
                   target="_blank"
-                  rel="noopener noreferrer">
+                  rel="noopener noreferrer"
+                >
                   <FaDesktop /> Visit Site
                 </a>
                 <a

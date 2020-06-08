@@ -10,6 +10,7 @@ import { FaDesktop, FaCode } from "react-icons/fa"
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
+import BLMBanner from "../../components/blmbanner"
 
 const SneakerShop = () => (
   <StaticQuery
@@ -38,6 +39,7 @@ const SneakerShop = () => (
     render={data => (
       <Layout>
         <SEO title="Project | The Sneaker Shop" />
+        <BLMBanner />
         <section id="portfolio-projects">
           <div className="container">
             <div className="projects-nav">
@@ -58,8 +60,8 @@ const SneakerShop = () => (
                 fluid={
                   data.allProjectsJson.edges[2].node.image.childImageSharp.fluid
                 }
-                style={{ height: 450, }}
-                imgStyle={{ objectPosition: '50% top', }}
+                style={{ height: 450 }}
+                imgStyle={{ objectPosition: "50% top" }}
               />
             </div>
             <h1>The Sneaker Shop</h1>
@@ -68,7 +70,8 @@ const SneakerShop = () => (
                 <a
                   href={data.allProjectsJson.edges[2].node.link}
                   target="_blank"
-                  rel="noopener noreferrer">
+                  rel="noopener noreferrer"
+                >
                   <FaDesktop /> Visit Site
                 </a>
                 <a

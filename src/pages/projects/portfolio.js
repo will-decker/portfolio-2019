@@ -10,6 +10,7 @@ import { FaDesktop, FaCode } from "react-icons/fa"
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
+import BLMBanner from "../../components/blmbanner"
 
 const Portfolio = () => (
   <StaticQuery
@@ -38,6 +39,7 @@ const Portfolio = () => (
     render={data => (
       <Layout>
         <SEO title="Project | Web Developer Portfolio" />
+        <BLMBanner />
         <section id="portfolio-projects">
           <div className="container">
             <div className="projects-nav">

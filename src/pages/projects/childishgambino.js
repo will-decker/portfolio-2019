@@ -8,9 +8,9 @@ import {
 import { DiHtml5, DiCss3, DiJqueryLogo } from "react-icons/di"
 import { FaDesktop, FaCode } from "react-icons/fa"
 
-
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
+import BLMBanner from "../../components/blmbanner"
 
 const ChildishGambino = () => (
   <StaticQuery
@@ -39,6 +39,7 @@ const ChildishGambino = () => (
     render={data => (
       <Layout>
         <SEO title="Project | Childish Gambino Tribute Site" />
+        <BLMBanner />
         <section id="portfolio-projects">
           <div className="container">
             <div className="projects-nav">
@@ -59,7 +60,7 @@ const ChildishGambino = () => (
                 fluid={
                   data.allProjectsJson.edges[1].node.image.childImageSharp.fluid
                 }
-                style={{ height: 450, }}
+                style={{ height: 450 }}
               />
             </div>
             <h1>Childish Gambino Tribute Site</h1>

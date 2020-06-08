@@ -17,6 +17,7 @@ import { FaDesktop, FaCode } from "react-icons/fa"
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
+import BLMBanner from "../../components/blmbanner"
 
 const BecomeOrganized = () => (
   <StaticQuery
@@ -45,6 +46,7 @@ const BecomeOrganized = () => (
     render={data => (
       <Layout>
         <SEO title="Project | Become Organized Website" />
+        <BLMBanner />
         <section id="portfolio-projects">
           <div className="container">
             <div className="projects-nav">
