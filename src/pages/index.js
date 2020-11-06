@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import { graphql } from "gatsby"
 
+import BLMBanner from "../components/blmbanner"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Intro from "../components/intro"
@@ -35,6 +36,7 @@ class IndexPage extends Component {
             `wordpress designer`,
           ]}
         />
+        <BLMBanner />
         <Intro />
         <About />
         <Skills />

@@ -10,12 +10,12 @@
 .headroom--unfixed {
   position: relative;
   // transform: translateY(0);
-  transform: translateY(-1520%);
+  transform: translateY(0);
   @include headroom-trans;
-  // background-blend-mode: multiply;
-  // background-image: url("../../images/fake_luxury_2X.png");
-  // background-color: $primary;
-  // box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+  background-blend-mode: multiply;
+  background-image: url("../../images/fake_luxury_2X.png");
+  background-color: $primary;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
 }
 .headroom--scrolled {
   @include headroom-trans;

@@ -3,32 +3,6 @@ import avatar from "../svgs/WD_Avatar.svg"
 
 const Intro = () => (
   <>
-    <section id="blm-message">
-      <div className="message-container">
-        <h1>Black Lives Matter</h1>
-        <p>
-          Support the movement against racial inequality, social injustice and
-          police brutality.
-        </p>
-        <div className="msg-btns">
-          <a
-            href="https://cutt.ly/donate-blm"
-            target="_blank"
-            className="donate-btn"
-          >
-            Donate
-          </a>
-          <a
-            href="https://cutt.ly/blacklivesmatter-home"
-            target="_blank"
-            className="donate-btn"
-          >
-            Learn More
-          </a>
-        </div>
-      </div>
-      <div className="scrolldown-msg">Scroll down for willdecker.com</div>
-    </section>
     <section id="intro">
       <div className="intro-container">
         <div className="intro-text">

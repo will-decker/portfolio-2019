@@ -163,10 +163,11 @@
 
 #blm-message-banner {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 400px;
+  padding: 1.5rem 0;
+  margin-top: 6rem;
   width: 100%;
   background-color: black;
 
@@ -174,59 +175,58 @@
     width: 100%;
     display: flex;
     // margin-top: 5em;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-grow: 1;
 
-    h1 {
-      text-transform: uppercase;
-      color: #dfe0d4;
-      letter-spacing: 1px;
-      -webkit-text-fill-color: black; /* Will override color (regardless of order) */
-      -webkit-text-stroke-width: 1.5px;
-      -webkit-text-stroke-color: $text;
-      font-size: 3.6em;
-      text-align: center;
-      -webkit-font-smoothing: auto;
-    }
-
-    p {
-      font-size: 1em;
-      padding: 0 25px 5px;
-      text-align: center;
-    }
-
-    .msg-btns {
-      display: flex;
+    .message-content {
       width: 100%;
-      justify-content: center;
-    }
-
-    .donate-btn {
-      font-family: "Open Sans", sans-serif;
-      cursor: pointer;
-      transition: all 300ms ease 0s;
-      text-decoration: none;
-      width: 150px;
-      height: 50px;
-      border: solid 2px $text;
-      background-color: black;
-      color: $text;
-      font-weight: bold;
-      font-size: 16px;
       display: flex;
-      -webkit-box-pack: center;
+      flex-direction: row;
       justify-content: center;
-      -webkit-box-align: center;
       align-items: center;
-      border-radius: 4px;
-      margin: 10px 15px;
 
-      &:hover {
-        background-color: #fce21a;
-        color: black;
-        border: none;
+      h1 {
+        text-transform: uppercase;
+        color: #dfe0d4;
+        letter-spacing: 1px;
+        -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: $text;
+        font-size: 3rem;
+        margin: 0 15px;
+        -webkit-font-smoothing: auto;
+      }
+
+      .msg-btns {
+        display: flex;
+      }
+
+      .donate-btn {
+        font-family: "Open Sans", sans-serif;
+        cursor: pointer;
+        transition: all 300ms ease 0s;
+        text-decoration: none;
+        width: 150px;
+        height: 50px;
+        border: solid 2px $text;
+        background-color: black;
+        color: $text;
+        font-weight: bold;
+        font-size: 16px;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        border-radius: 4px;
+        margin: 10px 15px;
+
+        &:hover {
+          background-color: #fce21a;
+          color: black;
+          border: none;
+        }
       }
     }
   }
