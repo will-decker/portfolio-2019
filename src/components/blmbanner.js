@@ -3,7 +3,7 @@ import React from "react"
 const BLMBanner = () => (
   <section id="blm-message-banner">
     <div className="message-container">
-      <div class="message-content">
+      <div className="message-content">
         <h1>Black Lives Matter</h1>
         <div className="msg-btns">
           <a

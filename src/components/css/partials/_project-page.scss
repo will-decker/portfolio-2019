@@ -240,3 +240,29 @@
     margin-bottom: 10px;
   }
 }
+
+@media only screen and (max-width: 1001px) {
+  #blm-message-banner {
+    .message-container {
+      .message-content {
+        flex-direction: column;
+
+        h1 {
+          font-size: 2.8rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 601px) {
+  #blm-message-banner {
+    .message-container {
+      .message-content {
+        h1 {
+          font-size: 2.3rem;
+        }
+      }
+    }
+  }
+}
