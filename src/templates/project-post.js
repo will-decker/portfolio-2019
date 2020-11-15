@@ -8,23 +8,9 @@ import {
 } from "react-icons/io"
 import { FaDesktop, FaCode } from "react-icons/fa"
 
-import Layout from "../../components/layout"
-import SEO from "../../components/seo"
-import BLMBanner from "../../components/blmbanner"
-
-export const query = graphql`
-  query($pathSlug: String!) {
-    mdx(frontmatter: { path: { eq: $pathSlug } }) {
-      frontmatter {
-        title
-        path
-        github
-        link
-      }
-      body
-    }
-  }
-`
+import Layout from "../../src/components/layout"
+import SEO from "../../src/components/seo"
+import BLMBanner from "../../src/components/blmbanner"
 
 const ProjectPage = ({ data: { mdx: project } }) => {
   const { title } = project.frontmatter
@@ -50,9 +36,7 @@ const ProjectPage = ({ data: { mdx: project } }) => {
           </div>
           <div className="project-image">
             <Img
-              fluid={
-                data.allProjectsJson.edges[0].node.image.childImageSharp.fluid
-              }
+              fluid={project.frontmatter.image.childImageSharp.fluid}
               style={{ height: 450 }}
             />
           </div>
@@ -60,14 +44,14 @@ const ProjectPage = ({ data: { mdx: project } }) => {
           <div className="info">
             <div className="buttons">
               <a
-                href={data.allProjectsJson.edges[0].node.link}
+                href={project.frontmatter.link}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaDesktop /> Visit Site
               </a>
               <a
-                href={data.allProjectsJson.edges[0].node.github}
+                href={project.frontmatter.github}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -81,5 +65,27 @@ const ProjectPage = ({ data: { mdx: project } }) => {
     </Layout>
   )
 }
+
+export const pageQuery = graphql`
+  query ProjectPostQuery($id: String) {
+    mdx(id: { eq: $id }) {
+      id
+      body
+      frontmatter {
+        slug
+        title
+        featureImage {
+          childImageSharp {
+            fluid(maxWidth: 1150) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        github
+        link
+      }
+    }
+  }
+`
 
 export default ProjectPage
