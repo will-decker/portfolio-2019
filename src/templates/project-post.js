@@ -21,26 +21,14 @@ const ProjectPage = ({ data: { mdx: project } }) => {
       <BLMBanner />
       <section id="portfolio-projects">
         <div className="container">
-          <div className="projects-nav">
-            <div className="projects-nav-link">
-              <Link to="/#work">
-                <IoIosArrowDropleftCircle /> Back to Portfolio
-              </Link>
-            </div>
-            <div className="spacer" />
-            <div className="projects-nav-link right">
-              <Link to="/projects/childishgambino">
-                Next Project <IoIosArrowDroprightCircle />
-              </Link>
-            </div>
-          </div>
+          <h1>{title}</h1>
           <div className="project-image">
             <Img
-              fluid={project.frontmatter.image.childImageSharp.fluid}
+              fluid={project.frontmatter.featureImage.childImageSharp.fluid}
               style={{ height: 450 }}
             />
           </div>
-          <h1>{title}</h1>
+
           <div className="info">
             <div className="buttons">
               <a
@@ -60,6 +48,19 @@ const ProjectPage = ({ data: { mdx: project } }) => {
             </div>
           </div>
           <MDXRenderer>{body}</MDXRenderer>
+          <div className="projects-nav">
+            <div className="projects-nav-link">
+              <Link to="/#work">
+                <IoIosArrowDropleftCircle /> Back to Portfolio
+              </Link>
+            </div>
+            <div className="spacer" />
+            <div className="projects-nav-link right">
+              <Link to="/projects/childishgambino">
+                Next Project <IoIosArrowDroprightCircle />
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
     </Layout>
