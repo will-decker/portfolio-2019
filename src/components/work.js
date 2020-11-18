@@ -9,7 +9,10 @@ const Work = ({ projects }) => (
       <h1>Work</h1>
       <div className="projects">
         {projects.map(project => (
-          <Project key={project.node.title} project={project.node} />
+          <Project
+            key={project.node.frontmatter.title}
+            project={project.node}
+          />
         ))}
         {/* <div className="more-work">
           <p>

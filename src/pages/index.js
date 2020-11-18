@@ -40,7 +40,7 @@ class IndexPage extends Component {
         <Intro />
         <About />
         <Skills />
-        <Work projects={data.allProjectsJson.edges} />
+        <Work projects={data.allMdx.edges} />
         <Contact />
       </Layout>
     )
@@ -48,22 +48,25 @@ class IndexPage extends Component {
 }
 
 export const query = graphql`
-  query {
-    allProjectsJson {
+  query ProjectQuery {
+    allMdx {
       edges {
         node {
-          image {
-            childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
+          body
+          frontmatter {
+            github
+            link
+            slug
+            title
+            order
+            featureImage {
+              childImageSharp {
+                fluid(maxWidth: 1150) {
+                  ...GatsbyImageSharpFluid
+                }
               }
             }
           }
-          id
-          title
-          page
-          link
-          github
         }
       }
     }
