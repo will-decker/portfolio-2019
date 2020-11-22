@@ -49,16 +49,16 @@ class IndexPage extends Component {
 
 export const query = graphql`
   query ProjectQuery {
-    allMdx {
+    allMdx(filter: { frontmatter: { postType: { eq: "project" } } }) {
       edges {
         node {
           body
           frontmatter {
+            date
             github
             link
             slug
             title
-            order
             featureImage {
               childImageSharp {
                 fluid(maxWidth: 1150) {
@@ -66,6 +66,7 @@ export const query = graphql`
                 }
               }
             }
+            order
           }
         }
       }
