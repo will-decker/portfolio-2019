@@ -7,7 +7,17 @@ const Project = ({ project }) => (
     to={`${project.frontmatter.slug}`}
     class={`box grid-item${project.frontmatter.order}`}
   >
-    <div className="project" key={project}>
+    <div
+      className="project"
+      key={project}
+      style={{
+        background: `url(
+          ${project.frontmatter.coverImage.publicURL}
+        )`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
       <div className="hover-bg">
         <div className="title">
           <div className="text">{project.frontmatter.title}</div>

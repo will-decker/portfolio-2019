@@ -59,12 +59,8 @@ export const query = graphql`
             link
             slug
             title
-            featureImage {
-              childImageSharp {
-                fluid(maxWidth: 1150) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
+            coverImage {
+              publicURL
             }
             order
           }

@@ -170,12 +170,9 @@
         grid-row: 4 / 6;
 
         .project {
-          background: url("../../images/projects/SneakerShop_screenshot.png");
+          // background: url("/content/projects/sneaker-shop/sneakershop-cover.png");
           height: 100%;
           width: 100%;
-          background-size: cover;
-          background-position: center bottom;
-          background-repeat: no-repeat;
         }
       }
     }
