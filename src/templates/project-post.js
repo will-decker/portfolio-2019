@@ -11,6 +11,7 @@ import { FaDesktop, FaCode } from "react-icons/fa"
 import Layout from "../../src/components/layout"
 import SEO from "../../src/components/seo"
 import BLMBanner from "../../src/components/blmbanner"
+import Contact from "../components/contact"
 
 const ProjectPage = ({ data: { mdx: project } }) => {
   const { title } = project.frontmatter
@@ -63,6 +64,7 @@ const ProjectPage = ({ data: { mdx: project } }) => {
           </div>
         </div>
       </section>
+      <Contact />
     </Layout>
   )
 }

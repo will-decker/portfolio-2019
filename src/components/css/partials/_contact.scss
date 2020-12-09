@@ -32,6 +32,7 @@
       box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
 
       @include mq(768) {
+        width: 75%;
         padding: 20px 20px;
       }
 
@@ -42,12 +43,8 @@
       .form-group {
         position: relative;
         padding: 20px 0;
-        width: 400px;
+        width: 600px;
         max-width: 100%;
-
-        @include mq(768) {
-          width: 300px;
-        }
 
         input,
         textarea {
