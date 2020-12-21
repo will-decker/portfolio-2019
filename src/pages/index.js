@@ -54,7 +54,6 @@ export const query = graphql`
         node {
           body
           frontmatter {
-            date
             github
             link
             slug
