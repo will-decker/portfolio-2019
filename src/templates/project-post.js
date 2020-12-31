@@ -38,13 +38,15 @@ const ProjectPage = ({ data: { mdx: project } }) => {
               >
                 <FaDesktop /> Visit Site
               </a>
-              <a
-                href={project.frontmatter.github}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaCode /> View Code
-              </a>
+              {project.frontmatter.github === null ? null : (
+                <a
+                  href={project.frontmatter.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaCode /> View Code
+                </a>
+              )}
             </div>
           </div>
           <MDXRenderer>{body}</MDXRenderer>
