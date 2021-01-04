@@ -29,8 +29,8 @@ const ProjectPage = ({ data: { mdx: project } }) => {
             />
           </div>
 
-          <div className="info">
-            <div className="buttons">
+          <div className="project-details">
+            <div className="project-info">
               <a
                 href={project.frontmatter.link}
                 target="_blank"
@@ -48,8 +48,10 @@ const ProjectPage = ({ data: { mdx: project } }) => {
                 </a>
               )}
             </div>
+            <div className="project-overview">
+              <MDXRenderer>{body}</MDXRenderer>
+            </div>
           </div>
-          <MDXRenderer>{body}</MDXRenderer>
           <div className="projects-nav">
             <div className="projects-nav-link">
               <Link to="/#work">
