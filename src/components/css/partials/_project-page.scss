@@ -76,14 +76,32 @@
 }
 
 #portfolio-projects .project-details .project-info {
-  // display: flex;
+  display: flex;
+  flex-direction: row;
   // justify-content: center;
   width: 40%;
+
+  .info-col {
+    width: 50%;
+
+    ul {
+      margin: 0;
+      padding: 0;
+
+      & + h5 {
+        margin-top: 2rem;
+      }
+
+      li {
+        list-style: none;
+      }
+    }
+  }
 }
 
 #portfolio-projects .project-details .project-info a {
-  padding: 10px 20px;
-  margin: 0 10px;
+  padding: 0;
+  margin: 0;
   color: $text;
   text-decoration: none;
   text-transform: capitalize;
@@ -97,8 +115,8 @@
   margin-right: 10px;
 }
 #portfolio-projects .project-details .project-info a:hover {
-  color: white;
-  background: $highlight;
+  color: $highlight;
+  text-decoration: underline;
 }
 #portfolio-projects .project-details .project-info a:hover .fas {
   color: white;

@@ -31,22 +31,47 @@ const ProjectPage = ({ data: { mdx: project } }) => {
 
           <div className="project-details">
             <div className="project-info">
-              <a
-                href={project.frontmatter.link}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaDesktop /> Visit Site
-              </a>
-              {project.frontmatter.github === null ? null : (
-                <a
-                  href={project.frontmatter.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaCode /> View Code
-                </a>
-              )}
+              <div className="info-col">
+                <h5>Role</h5>
+                <ul>
+                  <li>{project.frontmatter.role}</li>
+                </ul>
+                <h5>Client</h5>
+                <ul>
+                  <li>{project.frontmatter.client}</li>
+                </ul>
+              </div>
+              <div className="info-col">
+                <h5>Work</h5>
+                <ul>
+                  {project.frontmatter.work.map(w => (
+                    <li key={w}>{w}</li>
+                  ))}
+                </ul>
+                <h5>Links</h5>
+                <ul>
+                  <li>
+                    <a
+                      href={project.frontmatter.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaDesktop /> Visit Site
+                    </a>
+                  </li>
+                  {project.frontmatter.github === null ? null : (
+                    <li>
+                      <a
+                        href={project.frontmatter.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FaCode /> View Code
+                      </a>
+                    </li>
+                  )}
+                </ul>
+              </div>
             </div>
             <div className="project-overview">
               <MDXRenderer>{body}</MDXRenderer>
@@ -86,6 +111,9 @@ export const pageQuery = graphql`
             }
           }
         }
+        role
+        client
+        work
         github
         link
       }

@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 const Project = ({ project }) => (
   <Link
     to={`${project.frontmatter.slug}`}
-    class={`box grid-item${project.frontmatter.order}`}
+    className={`box grid-item${project.frontmatter.order}`}
   >
     <div
       className="project"
