@@ -45,7 +45,20 @@
 }
 
 #portfolio-projects {
-  padding: 50px 15px 50px;
+  padding: 50px 0;
+
+  #project-snapshot {
+    display: flex;
+    justify-content: center;
+    background-blend-mode: multiply;
+    background-image: url("../../images/fake_luxury_2X.png");
+    background-color: $primary;
+    padding: 5rem 0;
+
+    .snapshot-container {
+      max-width: 1400px;
+    }
+  }
 
   @include mq(480) {
     padding-top: 100px;
@@ -53,6 +66,7 @@
 }
 #portfolio-projects .project-image {
   width: 100%;
+  height: 450px;
   margin-bottom: 3rem;
 }
 #portfolio-projects .project-image img {
@@ -73,6 +87,7 @@
 
 #portfolio-projects .project-details {
   display: flex;
+  margin-bottom: 2rem;
 }
 
 #portfolio-projects .project-details .project-info {

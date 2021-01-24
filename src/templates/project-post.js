@@ -11,6 +11,7 @@ import { FaDesktop, FaCode } from "react-icons/fa"
 import Layout from "../../src/components/layout"
 import SEO from "../../src/components/seo"
 import BLMBanner from "../../src/components/blmbanner"
+import Snapshot from "../../src/components/snapshot"
 
 const ProjectPage = ({ data: { mdx: project } }) => {
   const { title } = project.frontmatter
@@ -20,15 +21,15 @@ const ProjectPage = ({ data: { mdx: project } }) => {
       <SEO title={title} />
       <BLMBanner />
       <section id="portfolio-projects">
+        <h1>{title}</h1>
+        <div className="project-image">
+          <Img
+            fluid={project.frontmatter.featureImage.childImageSharp.fluid}
+            fadeIn={true}
+            style={{ height: 450 }}
+          />
+        </div>
         <div className="container">
-          <h1>{title}</h1>
-          <div className="project-image">
-            <Img
-              fluid={project.frontmatter.featureImage.childImageSharp.fluid}
-              style={{ height: 450 }}
-            />
-          </div>
-
           <div className="project-details">
             <div className="project-info">
               <div className="info-col">
@@ -39,6 +40,10 @@ const ProjectPage = ({ data: { mdx: project } }) => {
                 <h5>Client</h5>
                 <ul>
                   <li>{project.frontmatter.client}</li>
+                </ul>
+                <h5>Year</h5>
+                <ul>
+                  <li>{project.frontmatter.year}</li>
                 </ul>
               </div>
               <div className="info-col">
@@ -77,6 +82,9 @@ const ProjectPage = ({ data: { mdx: project } }) => {
               <MDXRenderer>{body}</MDXRenderer>
             </div>
           </div>
+        </div>
+        <Snapshot image={project.frontmatter.showcaseImage.publicURL} />
+        <div className="container">
           <div className="projects-nav">
             <div className="projects-nav-link">
               <Link to="/#work">
@@ -106,10 +114,13 @@ export const pageQuery = graphql`
         title
         featureImage {
           childImageSharp {
-            fluid(maxWidth: 1150) {
-              ...GatsbyImageSharpFluid
+            fluid(maxWidth: 1400) {
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
+        }
+        showcaseImage {
+          publicURL
         }
         role
         client
