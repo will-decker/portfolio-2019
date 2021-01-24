@@ -122,6 +122,7 @@ export const pageQuery = graphql`
         showcaseImage {
           publicURL
         }
+        year
         role
         client
         work
