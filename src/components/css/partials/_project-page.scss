@@ -53,10 +53,14 @@
     background-blend-mode: multiply;
     background-image: url("../../images/fake_luxury_2X.png");
     background-color: $primary;
-    padding: 5rem 0;
+    padding: 5rem 4rem;
 
     .snapshot-container {
       max-width: 1400px;
+
+      img {
+        margin: 0;
+      }
     }
   }
 

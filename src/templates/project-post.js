@@ -61,7 +61,7 @@ const ProjectPage = ({ data: { mdx: project } }) => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <FaDesktop /> Visit Site
+                      Visit Site
                     </a>
                   </li>
                   {project.frontmatter.github === null ? null : (
@@ -71,7 +71,7 @@ const ProjectPage = ({ data: { mdx: project } }) => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <FaCode /> View Code
+                        View Code
                       </a>
                     </li>
                   )}
@@ -114,7 +114,7 @@ export const pageQuery = graphql`
         title
         featureImage {
           childImageSharp {
-            fluid(maxWidth: 1400) {
+            fluid(maxWidth: 1400, quality: 100) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
