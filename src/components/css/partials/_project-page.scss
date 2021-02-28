@@ -118,7 +118,7 @@
   }
 }
 
-#portfolio-projects .project-details .project-info a {
+#portfolio-projects .project-details a {
   padding: 0;
   margin: 0;
   color: $text;
@@ -133,11 +133,11 @@
   // color: $highlight;
   margin-right: 10px;
 }
-#portfolio-projects .project-details .project-info a:hover {
+#portfolio-projects .project-details a:hover {
   color: $highlight;
   text-decoration: underline;
 }
-#portfolio-projects .project-details .project-info a:hover .fas {
+#portfolio-projects .project-details a:hover .fas {
   color: white;
 }
 #portfolio-projects .project-overview {
