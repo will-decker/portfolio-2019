@@ -1,11 +1,10 @@
 import React from "react"
-import Img from "gatsby-image"
 
 const Snapshot = ({ image }) => (
   <>
     <div id="project-snapshot">
       <div className="snapshot-container">
-        <img src={image} alt="GIF-Finder-snapshot" />
+        <img src={image} alt="Project image" />
       </div>
 
       {/* <Img fluid={image} /> */}

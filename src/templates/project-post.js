@@ -84,6 +84,9 @@ const ProjectPage = ({ data: { mdx: project } }) => {
           </div>
         </div>
         <Snapshot image={project.frontmatter.showcaseImage.publicURL} />
+        {project.frontmatter.showcaseImage2 === null ? null : (
+          <Snapshot image={project.frontmatter.showcaseImage2.publicURL} />
+        )}
         <div className="container">
           <div className="projects-nav">
             <div className="projects-nav-link">
@@ -120,6 +123,9 @@ export const pageQuery = graphql`
           }
         }
         showcaseImage {
+          publicURL
+        }
+        showcaseImage2 {
           publicURL
         }
         year
