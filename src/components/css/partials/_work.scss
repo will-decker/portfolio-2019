@@ -4,10 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  // Create mixin for code below
-  background-blend-mode: multiply;
-  background-image: url("../../images/fake_luxury_2X.png");
-  background-color: $primary;
+  @include lux-bg;
 
   h1 {
     font-size: 3.8em;
@@ -96,11 +93,13 @@
 
           .hover-bg {
             padding: 10px 20px;
-            background: rgba(255, 53, 53, 0.8);
+            background: rgba(228, 4, 117, 0.8);
 
             .title {
               .text {
-                background: black;
+                background: $accent;
+                font-family: "Open Sans", sans-serif;
+                color: $highlight;
                 border-radius: 5px;
                 padding: 10px 20px;
                 transform: translate3d(0, 0, 0);

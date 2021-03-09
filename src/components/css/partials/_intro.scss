@@ -3,9 +3,7 @@
   // height: 40vh;
   padding: 125px 20px;
   width: 100%;
-  background-blend-mode: multiply;
-  background-image: url("../../images/fake_luxury_2X.png");
-  background-color: $primary;
+  @include lux-bg;
 
   // @include mq(480) {
   //   height: 700px;

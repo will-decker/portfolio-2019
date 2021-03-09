@@ -50,9 +50,7 @@
   #project-snapshot {
     display: flex;
     justify-content: center;
-    background-blend-mode: multiply;
-    background-image: url("../../images/fake_luxury_2X.png");
-    background-color: $primary;
+    @include lux-bg;
     padding: 5rem 4rem;
 
     @include mq(768) {
@@ -246,6 +244,7 @@
 
       h1 {
         text-transform: uppercase;
+        font-family: "Open Sans", sans-serif;
         color: #dfe0d4;
         letter-spacing: 1px;
         -webkit-text-fill-color: black; /* Will override color (regardless of order) */

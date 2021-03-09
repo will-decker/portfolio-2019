@@ -1,8 +1,13 @@
 // Variables
-$primary: #2a2d33;
-$accent: #3e92a3;
-$highlight: #ff5335;
-$text: #dfe0d4;
+$primary: #0e0220;
+$accent: #48e0e4;
+$highlight: #e40475;
+$text: #d7fbf6;
+
+// $primary: #2a2d33;
+// $accent: #3e92a3;
+// $highlight: #ff5335;
+// $text: #dfe0d4;
 
 // #353940 - old primary
 
@@ -14,4 +19,10 @@ $text: #dfe0d4;
 
 @mixin headroom-trans {
   transition: all 0.6s ease;
+}
+
+@mixin lux-bg {
+  background-blend-mode: overlay;
+  background-image: url("../../images/fake_luxury_2X-v2.png");
+  background-color: $primary;
 }

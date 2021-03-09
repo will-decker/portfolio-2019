@@ -26,9 +26,7 @@
       text-align: center;
       padding: 20px 40px;
       border-radius: 5px;
-      background-blend-mode: multiply;
-      background-image: url("../../images/fake_luxury_2X.png");
-      background-color: $primary;
+      @include lux-bg;
       box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
 
       @include mq(768) {
