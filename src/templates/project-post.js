@@ -90,14 +90,14 @@ const ProjectPage = ({ data: { mdx: project } }) => {
         <div className="container">
           <div className="projects-nav">
             <div className="projects-nav-link">
-              <Link to="/#work">
-                <IoIosArrowDropleftCircle /> Back to Portfolio
+              <Link to={project.frontmatter.prevPage}>
+                <IoIosArrowDropleftCircle /> Previous
               </Link>
             </div>
             <div className="spacer" />
             <div className="projects-nav-link right">
-              <Link to="/projects/childishgambino">
-                Next Project <IoIosArrowDroprightCircle />
+              <Link to={project.frontmatter.nextPage}>
+                Next <IoIosArrowDroprightCircle />
               </Link>
             </div>
           </div>
@@ -134,6 +134,8 @@ export const pageQuery = graphql`
         work
         github
         link
+        nextPage
+        prevPage
       }
     }
   }

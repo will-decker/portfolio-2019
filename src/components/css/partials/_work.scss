@@ -51,7 +51,6 @@
         transition: all 0.4s ease-in-out;
         cursor: pointer;
         width: 100%;
-        color: white;
         text-decoration: none;
         text-transform: uppercase;
         overflow: hidden;
@@ -98,7 +97,8 @@
             .title {
               .text {
                 background: $accent;
-                font-family: "Open Sans", sans-serif;
+                font-family: "Lato", sans-serif;
+                font-weight: bold;
                 color: $highlight;
                 border-radius: 5px;
                 padding: 10px 20px;
