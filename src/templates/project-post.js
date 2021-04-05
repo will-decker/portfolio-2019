@@ -10,7 +10,6 @@ import { FaDesktop, FaCode } from "react-icons/fa"
 
 import Layout from "../../src/components/layout"
 import SEO from "../../src/components/seo"
-import BLMBanner from "../../src/components/blmbanner"
 import Snapshot from "../../src/components/snapshot"
 
 const ProjectPage = ({ data: { mdx: project } }) => {
@@ -19,7 +18,6 @@ const ProjectPage = ({ data: { mdx: project } }) => {
   return (
     <Layout>
       <SEO title={title} />
-      <BLMBanner />
       <section id="portfolio-projects">
         <h1>{title}</h1>
         <div className="project-image">
