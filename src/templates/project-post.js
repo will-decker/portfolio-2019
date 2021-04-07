@@ -31,10 +31,6 @@ const ProjectPage = ({ data: { mdx: project } }) => {
           <div className="project-details">
             <div className="project-info">
               <div className="info-col">
-                <h5>Role</h5>
-                <ul>
-                  <li>{project.frontmatter.role}</li>
-                </ul>
                 <h5>Client</h5>
                 <ul>
                   <li>{project.frontmatter.client}</li>

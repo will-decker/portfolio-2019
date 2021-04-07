@@ -73,8 +73,6 @@
               width: 100%;
 
               .text {
-                background: black;
-                border-radius: 5px;
                 padding: 10px 20px;
                 transform: translate3d(0, 400px, 0);
                 transition: all 0.5s ease-in-out;
@@ -96,11 +94,9 @@
 
             .title {
               .text {
-                background: $accent;
                 font-family: "Lato", sans-serif;
                 font-weight: bold;
-                color: $highlight;
-                border-radius: 5px;
+                color: $text;
                 padding: 10px 20px;
                 transform: translate3d(0, 0, 0);
                 opacity: 1;
