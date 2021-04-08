@@ -41,23 +41,26 @@ const ProjectPage = ({ data: { mdx: project } }) => {
                 </ul>
               </div>
               <div className="info-col">
-                <h5>Work</h5>
+                <h5>Role</h5>
                 <ul>
-                  {project.frontmatter.work.map(w => (
-                    <li key={w}>{w}</li>
+                  {project.frontmatter.work.map(role => (
+                    <li key={role}>{role}</li>
                   ))}
                 </ul>
                 <h5>Links</h5>
                 <ul>
-                  <li>
-                    <a
-                      href={project.frontmatter.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Visit Site
-                    </a>
-                  </li>
+                  {project.frontmatter.link === null ? null : (
+                    <li>
+                      <a
+                        href={project.frontmatter.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Visit Site
+                      </a>
+                    </li>
+                  )}
+
                   {project.frontmatter.github === null ? null : (
                     <li>
                       <a
