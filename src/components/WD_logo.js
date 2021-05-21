@@ -19,25 +19,24 @@ export default function Model(props) {
   }, [hovered])
 
   useEffect(() => {
-    document.getElementsByClassName("intro-text").style.opacity = active
-      ? "1"
-      : "0"
-    document.getElementsByClassName("intro-text").style.transform = active
-      ? "translate3d(-210px, 0, 0)"
-      : "translate3d(-210px, 75px, 0)"
+    document.getElementById("intro-text").style.opacity = active ? "0" : "1"
+    document.getElementById("intro-text").style.transform = active
+      ? "translate3d(0, 75px, 0)"
+      : "translate3d(0, 0, 0)"
   }, [active])
 
   useFrame(({ clock }) => {
-    group.current.position.z = Math.sin(clock.getElapsedTime()) + 5
+    group.current.position.z = Math.sin(clock.getElapsedTime()) * 2
   })
 
   const { color } = useSpring({
     color: hovered ? "#e40475" : "#48e0e4",
   })
 
-  const { rotation, scale } = useSpring({
+  const { rotation, scale, position } = useSpring({
     scale: active ? [0.07, 0.07, 0.07] : [0.05, 0.05, 0.05],
     rotation: active ? [0, 0.5, 0] : [0, 0, 0],
+    position: active ? [0, -5, 0] : [0, 0, 0],
     config: { tension: 300, friction: 15 },
   })
 
@@ -48,11 +47,12 @@ export default function Model(props) {
       dispose={null}
       scale={scale}
       rotation={rotation}
+      position={position}
       onClick={event => setActive(!active)}
       onPointerOver={event => setHover(true)}
       onPointerOut={event => setHover(false)}
     >
-      <group position={[-20, 150, -1.71]}>
+      <group position={[-32, 100, -1.71]}>
         {/* <animated.mesh
           geometry={nodes.Path_1.geometry}
           material={nodes.Path_1.material}

@@ -9,11 +9,11 @@ class Header extends Component {
     return (
       <Headroom calcHeightOnResize disableInlineStyles>
         <nav className="navbar">
-          <div className="logo">
+          {/* <div className="logo">
             <Link to="/">
               <img src={logo} alt="logo" />
             </Link>
-          </div>
+          </div> */}
           <div className="spacer" />
           <div className="navbar-menu">
             <ul>
