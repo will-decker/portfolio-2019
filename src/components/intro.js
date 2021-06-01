@@ -2,6 +2,8 @@ import React, { Suspense, useState, useEffect } from "react"
 import { Link } from "gatsby"
 import * as THREE from "three"
 import { Environment } from "@react-three/drei"
+import { EffectComposer, Bloom } from "@react-three/postprocessing"
+
 import { Canvas, useFrame, useThree } from "@react-three/fiber"
 import Model from "./WD_logo"
 
@@ -23,8 +25,10 @@ const Intro = () => {
       <section id="intro">
         <div className="intro-container">
           <div id="intro-text">
-            <h1>Will Decker</h1>
-            <h2>Creative Developer</h2>
+            <div id="anim-text">
+              <h1>Will Decker</h1>
+              <h2>Creative Developer</h2>
+            </div>
             <Link to="/#work">
               <div className="cta-btn">View My Work</div>
             </Link>
@@ -47,6 +51,13 @@ const Intro = () => {
             <Model />
           </Suspense>
           <Rig />
+          <EffectComposer>
+            <Bloom
+              luminanceThreshold={0}
+              luminanceSmoothing={0.9}
+              height={1000}
+            />
+          </EffectComposer>
         </Canvas>
       </section>
     </>

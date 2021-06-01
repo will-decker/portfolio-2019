@@ -19,8 +19,8 @@ export default function Model(props) {
   }, [hovered])
 
   useEffect(() => {
-    document.getElementById("intro-text").style.opacity = active ? "0" : "1"
-    document.getElementById("intro-text").style.transform = active
+    document.getElementById("anim-text").style.opacity = active ? "0" : "1"
+    document.getElementById("anim-text").style.transform = active
       ? "translate3d(0, 75px, 0)"
       : "translate3d(0, 0, 0)"
   }, [active])
