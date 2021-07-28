@@ -51,13 +51,13 @@ const Intro = () => {
             <Model />
           </Suspense>
           <Rig />
-          <EffectComposer>
+          {/* <EffectComposer>
             <Bloom
               luminanceThreshold={0}
               luminanceSmoothing={0.8}
               height={1000}
             />
-          </EffectComposer>
+          </EffectComposer> */}
         </Canvas>
       </section>
     </>
