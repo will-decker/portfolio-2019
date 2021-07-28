@@ -19,10 +19,10 @@ export default function Model(props) {
   }, [hovered])
 
   useEffect(() => {
-    document.getElementById("anim-text").style.opacity = active ? "0" : "1"
+    document.getElementById("anim-text").style.opacity = active ? "1" : "0"
     document.getElementById("anim-text").style.transform = active
-      ? "translate3d(0, 75px, 0)"
-      : "translate3d(0, 0, 0)"
+      ? "translate3d(0, 0, 0)"
+      : "translate3d(0, 75px, 0)"
   }, [active])
 
   useFrame(({ clock }) => {
@@ -34,9 +34,9 @@ export default function Model(props) {
   })
 
   const { rotation, scale, position } = useSpring({
-    scale: active ? [0.07, 0.07, 0.07] : [0.05, 0.05, 0.05],
-    rotation: active ? [0, 0.5, 0] : [0, 0, 0],
-    position: active ? [0, -5, 0] : [0, 0, 0],
+    scale: active ? [0.05, 0.05, 0.05] : [0.07, 0.07, 0.07],
+    rotation: active ? [0, 0, 0] : [0, 0.5, 0],
+    position: active ? [0, 0, 0] : [0, -5, 0],
     config: { tension: 300, friction: 15 },
   })
 
