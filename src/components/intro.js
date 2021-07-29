@@ -47,7 +47,7 @@ const Intro = () => {
           {/* <Box position={[-1.2, 0, 0]} />
         <Box position={[1.2, 0, 0]} /> */}
           <Suspense fallback={null}>
-            <Environment preset={"night"} background={false} />
+            <Environment preset={"warehouse"} background={false} />
             <Model />
           </Suspense>
           <Rig />
