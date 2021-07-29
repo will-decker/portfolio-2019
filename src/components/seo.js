@@ -77,17 +77,7 @@ function SEO({ description, lang, meta, keywords, title }) {
             : []
         )
         .concat(meta)}
-    >
-      <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com/"
-        crossorigin
-      ></link>
-      <link
-        rel="preload"
-        href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,900&family=Lato&family=Open+Sans:wght@400;700&display=swap"
-      />
-    </Helmet>
+    ></Helmet>
   )
 }
 
