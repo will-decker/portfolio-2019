@@ -78,6 +78,16 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Lato`,
+          `Bitter:900i`, // you can also specify font weights and styles
+        ],
+        display: "swap",
+      },
+    },
     // {
     //   resolve: `gatsby-plugin-react-svg`,
     //   options: {
