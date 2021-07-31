@@ -83,7 +83,7 @@ module.exports = {
       options: {
         fonts: [
           `Lato`,
-          `Bitter:900i`, // you can also specify font weights and styles
+          `Bitter:900`, // you can also specify font weights and styles
         ],
         display: "swap",
       },
