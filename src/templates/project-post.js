@@ -51,6 +51,10 @@ const ProjectPage = ({ data: { mdx: project } }) => {
                 project.frontmatter.github === null ? null : (
                   <h5>Links</h5>
                 )}
+                {project.frontmatter.link &&
+                project.frontmatter.github === null ? null : (
+                  <h5>Links</h5>
+                )}
                 <ul>
                   {project.frontmatter.link === null ? null : (
                     <li>
