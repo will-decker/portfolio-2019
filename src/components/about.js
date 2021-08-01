@@ -10,11 +10,16 @@ const About = () => (
       <div className="profile">
         <h1>Hi,</h1>
         <p>
-          I’m Will Decker, a designer, developer and animator based in New
-          Jersey. I have over a decade of experience freelancing as a motion
-          designer in New York City. Recently, I expanded my skillset to include
-          web design and development. I love to learn new skills or techniques
-          that inspire me to create cool things.
+          I'm Will Decker, a web developer who likes to focus on the visual and
+          creative side of web development.
+          <br />
+          <br />
+          My background is in motion graphics and visual effects and I like to
+          incorporate these skills into my work in front-end development.
+          <br />
+          <br />
+          Currently, I am focusing on full-stack web development with Node and
+          incorporating 3D into websites with WebGL.
         </p>
       </div>
     </div>
