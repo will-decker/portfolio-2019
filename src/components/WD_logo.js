@@ -36,7 +36,7 @@ export default function Model(props) {
   const { rotation, scale, position } = useSpring({
     scale: active ? [0.05, 0.05, 0.05] : [0.07, 0.07, 0.07],
     rotation: active ? [0, 0, 0] : [0, 0.5, 0],
-    position: active ? [0, 0, 0] : [2, -5, 0],
+    position: active ? [0, 0, 0] : [2, 0, 0],
     config: { tension: 300, friction: 15 },
   })
 
