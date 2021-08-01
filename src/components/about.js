@@ -10,16 +10,20 @@ const About = () => (
       <div className="profile">
         <h1>Hi,</h1>
         <p>
-          I'm Will Decker, a web developer who likes to focus on the visual and
-          creative side of web development.
+          I'm Will Decker, a web developer who loves creating interesting
+          visuals and interactions. Code, animation, 3D and video are all tools
+          at my disposal to achieve this.
           <br />
           <br />
-          My background is in motion graphics and visual effects and I like to
-          incorporate these skills into my work in front-end development.
+          With a background in motion graphics and visual effects, I like to
+          incorporate this experience into my web development work. I believe it
+          helps give me a unique perspective into creating website that are more
+          of an experience.
           <br />
           <br />
-          Currently, I am focusing on full-stack web development with Node and
-          incorporating 3D into websites with WebGL.
+          Currently, in my free time, I am focusing on full-stack web
+          development with React and Node and incorporating 3D into websites
+          with WebGL.
         </p>
       </div>
     </div>
