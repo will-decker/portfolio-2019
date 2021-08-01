@@ -15,6 +15,17 @@ import Snapshot from "../../src/components/snapshot"
 const ProjectPage = ({ data: { mdx: project } }) => {
   const { title } = project.frontmatter
   const { body } = project
+
+  let link = null
+  if (
+    project.frontmatter.link === null &&
+    project.frontmatter.github === null
+  ) {
+    link
+  } else {
+    link = <h5>Links</h5>
+  }
+
   return (
     <Layout>
       <SEO title={title} />
@@ -47,14 +58,9 @@ const ProjectPage = ({ data: { mdx: project } }) => {
                     <li key={role}>{role}</li>
                   ))}
                 </ul>
-                {project.frontmatter.link ||
-                project.frontmatter.github === null ? null : (
-                  <h5>Links</h5>
-                )}
-                {project.frontmatter.link &&
-                project.frontmatter.github === null ? null : (
-                  <h5>Links</h5>
-                )}
+
+                {link}
+
                 <ul>
                   {project.frontmatter.link === null ? null : (
                     <li>
@@ -95,7 +101,7 @@ const ProjectPage = ({ data: { mdx: project } }) => {
           <div className="projects-nav">
             <div className="projects-nav-link">
               <Link to={project.frontmatter.prevPage}>
-                <IoIosArrowDropleftCircle /> Previous
+                <IoIosArrowDropleftCircle /> Prev
               </Link>
             </div>
             <div className="spacer" />
