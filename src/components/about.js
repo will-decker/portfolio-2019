@@ -11,14 +11,14 @@ const About = () => (
         <h1>Hi,</h1>
         <p>
           I'm Will Decker, a web developer who loves creating interesting
-          visuals and interactions. Code, animation, 3D and video are all tools
-          at my disposal to achieve this.
+          visuals and interactions. In order to accomplish this, I use code,
+          design, animation, 3D, and video.
           <br />
           <br />
           With a background in motion graphics and visual effects, I like to
           incorporate this experience into my web development work. I believe it
-          helps give me a unique perspective into creating website that are more
-          of an experience.
+          gives me a unique perspective that allows me to create websites that
+          are more of an experience.
           <br />
           <br />
           Currently, in my free time, I am focusing on full-stack web
