@@ -5,8 +5,8 @@
   width: 100%;
   @include lux-bg;
 
-  // @include mq(480) {
-  //   height: 700px;
+  // @include mq(768) {
+  //   height: 70vh;
   // }
 
   .intro-container {
@@ -26,6 +26,10 @@
       justify-content: center;
       text-align: center;
     }
+
+    // @include mq(768) {
+    //   top: 40%;
+    // }
 
     @media only screen and (max-width: 900px) and (orientation: landscape) {
       flex-direction: row;
