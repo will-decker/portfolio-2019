@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import React, { Component } from "react"
 import Headroom from "react-headroom"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 import DrawerToggleButton from "./drawertogglebutton"
 import logo from "../svgs/wd_logo.svg"
 
@@ -18,16 +19,16 @@ class Header extends Component {
           <div className="navbar-menu">
             <ul>
               <li>
-                <Link to="/#intro">Home</Link>
+                <AnchorLink to="/#intro" title="HOME" />
               </li>
               <li>
-                <Link to="/#about">About</Link>
+                <AnchorLink to="/#about" title="ABOUT" />
               </li>
               <li>
-                <Link to="/#work">Work</Link>
+                <AnchorLink to="/#work" title="WORK" />
               </li>
               <li>
-                <Link to="/#contact">Contact</Link>
+                <AnchorLink to="/#contact" title="CONTACT" />
               </li>
             </ul>
           </div>

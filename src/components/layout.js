@@ -6,10 +6,10 @@ import Footer from "./footer"
 
 import Header from "./header"
 
-if (typeof window !== "undefined") {
-  // eslint-disable-next-line global-require
-  require("smooth-scroll")('a[href*="#"]')
-}
+// if (typeof window !== "undefined") {
+//   // eslint-disable-next-line global-require
+//   require("smooth-scroll")('a[href*="#"]')
+// }
 
 class Layout extends Component {
   constructor(props) {
