@@ -1,0 +1,36 @@
+.toggle-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 32px;
+  width: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (min-width: 769px) {
+  .toggle-button {
+    display: none;
+  }
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button .toggle-button__line {
+  width: 32px;
+  height: 3px;
+  background: #dfe0d4;
+}
+/*# sourceMappingURL=overlaytogglebutton.css.map */

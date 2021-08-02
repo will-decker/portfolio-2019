@@ -1,7 +1,6 @@
 import React, { Component } from "react"
 import { graphql } from "gatsby"
 
-import BLMBanner from "../components/blmbanner"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Intro from "../components/intro"
@@ -36,11 +35,10 @@ class IndexPage extends Component {
             `wordpress designer`,
           ]}
         />
-        <BLMBanner />
         <Intro />
         <About />
         <Skills />
-        <Work projects={data.allProjectsJson.edges} />
+        <Work projects={data.allMdx.edges} />
         <Contact />
       </Layout>
     )
@@ -48,21 +46,21 @@ class IndexPage extends Component {
 }
 
 export const query = graphql`
-  query {
-    allProjectsJson {
+  query ProjectQuery {
+    allMdx(filter: { frontmatter: { postType: { eq: "project" } } }) {
       edges {
         node {
-          image {
-            childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
-              }
+          body
+          frontmatter {
+            github
+            link
+            slug
+            title
+            coverImage {
+              publicURL
             }
+            order
           }
-          title
-          page
-          link
-          github
         }
       }
     }

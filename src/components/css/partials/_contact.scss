@@ -26,12 +26,11 @@
       text-align: center;
       padding: 20px 40px;
       border-radius: 5px;
-      background-blend-mode: multiply;
-      background-image: url("../../images/fake_luxury_2X.png");
-      background-color: $primary;
+      @include lux-bg;
       box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
 
       @include mq(768) {
+        width: 90%;
         padding: 20px 20px;
       }
 
@@ -42,12 +41,8 @@
       .form-group {
         position: relative;
         padding: 20px 0;
-        width: 400px;
+        width: 600px;
         max-width: 100%;
-
-        @include mq(768) {
-          width: 300px;
-        }
 
         input,
         textarea {
@@ -112,6 +107,7 @@
         padding: 15px 0;
         margin-top: 15px;
         width: 100%;
+        transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
 
         &:hover {
           background-color: $highlight;

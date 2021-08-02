@@ -3,14 +3,24 @@ import Img from "gatsby-image"
 import { Link } from "gatsby"
 
 const Project = ({ project }) => (
-  <Link to={`${project.page}`}>
-    <div className="project" key={project}>
-      <div className="project-image">
-        <Img fluid={project.image.childImageSharp.fluid} />
-      </div>
-      <div className="project-info">
-        <div className="project-info-wrap">
-          <h2 className="project-title">{project.title}</h2>
+  <Link
+    to={`${project.frontmatter.slug}`}
+    className={`box grid-item${project.frontmatter.order}`}
+  >
+    <div
+      className="project"
+      key={project}
+      style={{
+        background: `url(
+          ${project.frontmatter.coverImage.publicURL}
+        )`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <div className="hover-bg">
+        <div className="title">
+          <div className="text">{project.frontmatter.title}</div>
         </div>
       </div>
     </div>

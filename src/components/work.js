@@ -7,14 +7,14 @@ const Work = ({ projects }) => (
   <section id="work">
     <div className="work-container">
       <h1>Work</h1>
-      <p className="lead">
-        A selection of my web design and development projects
-      </p>
       <div className="projects">
         {projects.map(project => (
-          <Project key={project.node.title} project={project.node} />
+          <Project
+            key={project.node.frontmatter.title}
+            project={project.node}
+          />
         ))}
-        <div className="more-work">
+        {/* <div className="more-work">
           <p>
             Check out my motion design and animation work{" "}
             <a
@@ -27,7 +27,7 @@ const Work = ({ projects }) => (
               </span>
             </a>
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
   </section>

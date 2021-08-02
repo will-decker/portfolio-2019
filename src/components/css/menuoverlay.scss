@@ -4,9 +4,9 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-blend-mode: multiply;
-  background-image: url("../../images/fake_luxury_2X.png");
-  background-color: #353940;
+  background-blend-mode: overlay;
+  background-image: url("../../images/fake_luxury_2X-v2.png");
+  background-color: #100324;
   position: fixed;
   top: 0;
   left: 0;
@@ -14,15 +14,15 @@
   opacity: 0;
   z-index: 2100;
   visibility: hidden;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-out;
 
   @media (min-width: 769px) {
     display: none;
   }
 
   svg {
-    width: 5.7em;
-    height: 5.7em;
+    width: 5.3em;
+    height: 5.3em;
     position: absolute;
     top: 30px;
     right: 20px;
@@ -54,10 +54,10 @@
         font-size: 3em;
         cursor: pointer;
         color: #dfe0d4;
-        transition: 0.5s;
+        transition: opacity 0.5s ease-out;
 
         &:hover {
-          color: #ff5335;
+          color: #48dfe4f1;
         }
       }
     }
@@ -67,5 +67,5 @@
 .menu-overlay.open {
   visibility: visible;
   opacity: 1;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-out;
 }

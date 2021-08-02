@@ -45,7 +45,26 @@
 }
 
 #portfolio-projects {
-  padding: 50px 15px 50px;
+  padding: 106px 0 0;
+
+  #project-snapshot {
+    display: flex;
+    justify-content: center;
+    @include lux-bg;
+    padding: 5rem 4rem;
+
+    @include mq(768) {
+      padding: 2rem;
+    }
+
+    .snapshot-container {
+      max-width: 1400px;
+
+      img {
+        margin: 0;
+      }
+    }
+  }
 
   @include mq(480) {
     padding-top: 100px;
@@ -53,6 +72,7 @@
 }
 #portfolio-projects .project-image {
   width: 100%;
+  height: 450px;
   margin-bottom: 3rem;
 }
 #portfolio-projects .project-image img {
@@ -68,51 +88,101 @@
   font-size: 4rem;
   font-weight: 600;
   // font-style: italic;
-  margin-bottom: 1.5rem;
-}
-#portfolio-projects .info .buttons {
-  display: flex;
-  justify-content: center;
-  padding: 20px 0;
-  margin-bottom: 1.5rem;
+  margin: 2rem 0;
 }
 
-#portfolio-projects .info .buttons a {
-  display: inline-flex;
-  justify-content: center;
-  width: 175px;
-  padding: 10px 20px;
-  margin: 0 10px;
-  border-radius: 3px;
+#portfolio-projects .project-details {
+  display: flex;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+
+  @include mq(768) {
+    flex-direction: column;
+    align-items: center;
+    :nth-child(1) {
+      order: 2;
+    }
+
+    :nth-child(2) {
+      order: 1;
+    }
+  }
+
+  h4 {
+    a {
+      color: #48e0e4;
+    }
+  }
+}
+
+#portfolio-projects .project-details .project-info {
+  display: flex;
+  flex-direction: row;
+  // justify-content: center;
+  width: 40%;
+  margin-bottom: 1rem;
+
+  @include mq(768) {
+    width: 90%;
+  }
+
+  .info-col {
+    width: 50%;
+
+    ul {
+      margin: 0;
+      padding: 0;
+
+      & + h5 {
+        margin-top: 2rem;
+      }
+
+      li {
+        list-style: none;
+      }
+    }
+  }
+}
+
+#portfolio-projects .project-details a {
+  padding: 0;
+  margin: 0;
   color: $text;
-  background: $accent;
   text-decoration: none;
   text-transform: capitalize;
   transition: all 0.3s ease-in-out;
 }
-#portfolio-projects .info .buttons svg {
+#portfolio-projects .project-details .project-info svg {
   height: 1.2em;
   width: 1.2em;
   align-self: center;
   // color: $highlight;
   margin-right: 10px;
 }
-#portfolio-projects .info .buttons a:hover {
-  color: white;
-  background: $highlight;
+#portfolio-projects .project-details a:hover {
+  color: $highlight;
+  text-decoration: underline;
 }
-#portfolio-projects .info .buttons a:hover .fas {
+#portfolio-projects .project-details a:hover .fas {
   color: white;
 }
-#portfolio-projects p {
-  display: inline-block;
-  border-radius: 3px;
-  color: $text;
-  font-size: 1.5rem;
-  line-height: 1.7;
-  text-decoration: none;
-  margin-bottom: 1.8rem;
-  // text-transform: capitalize;
+#portfolio-projects .project-overview {
+  width: 60%;
+
+  @include mq(768) {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    display: inline-block;
+    border-radius: 3px;
+    color: $text;
+    font-size: 1rem;
+    line-height: 1.7;
+    text-decoration: none;
+    margin-bottom: 1.8rem;
+  }
 }
 
 #portfolio-projects .technologies {
@@ -128,10 +198,9 @@
   }
 }
 #portfolio-projects h3 {
-  font-family: "Roboto Slab", serif;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 700;
-  margin: 3rem auto;
+  // margin: 3rem auto;
   text-transform: uppercase;
 }
 #portfolio-projects .technologies .icons {
@@ -156,9 +225,9 @@
   #portfolio-projects p {
     font-size: 1rem;
   }
-  #portfolio-projects h3 {
-    text-align: center;
-  }
+  // #portfolio-projects h3 {
+  //   text-align: center;
+  // }
 }
 
 #blm-message-banner {
@@ -188,6 +257,7 @@
 
       h1 {
         text-transform: uppercase;
+        font-family: "Open Sans", sans-serif;
         color: #dfe0d4;
         letter-spacing: 1px;
         -webkit-text-fill-color: black; /* Will override color (regardless of order) */

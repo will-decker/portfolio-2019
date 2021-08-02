@@ -1,8 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Bitter|Roboto+Slab|Open+Sans:400,800");
-
 @import "partials/_media_queries";
 @import "partials/_layout";
 @import "partials/_vars";
+@import "partials/_cta-button";
 @import "partials/_header";
 @import "partials/_headroom";
 @import "partials/_blog";
@@ -20,17 +19,22 @@ body {
 }
 
 body {
-  font-family: "Roboto Slab", serif;
+  font-family: "Lato", sans-serif;
   background: $primary;
   color: $text;
 
-  h1 {
-    font-family: "Open Sans", sans-serif;
+  h1,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Bitter", serif;
+    font-style: italic;
     color: $accent;
   }
 
   h2 {
-    font-family: "Roboto Slab", serif;
+    font-family: "Lato", sans-serif;
     color: $text;
   }
 }
