@@ -18,7 +18,7 @@ const About = () => (
           With a background in motion graphics and visual effects, I like to
           incorporate this experience into my web development work. I believe it
           gives me a unique perspective that allows me to create websites that
-          are more of an experience.
+          are more immersive.
           <br />
           <br />
           Currently, in my free time, I am focusing on full-stack web
