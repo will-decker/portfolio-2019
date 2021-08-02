@@ -1,7 +1,7 @@
 import React, { Suspense, useState, useEffect } from "react"
 import { Link } from "gatsby"
 import * as THREE from "three"
-import { Environment, Loader } from "@react-three/drei"
+import { Environment } from "@react-three/drei"
 import { EffectComposer, Bloom } from "@react-three/postprocessing"
 
 import { Canvas, useFrame, useThree } from "@react-three/fiber"
@@ -59,7 +59,6 @@ const Intro = () => {
             />
           </EffectComposer> */}
         </Canvas>
-        <Loader />
       </section>
     </>
   )
