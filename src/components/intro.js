@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 import * as THREE from "three"
 import { Environment } from "@react-three/drei"
+import { EffectComposer, DepthOfField } from "@react-three/postprocessing"
 
 import { Canvas, useFrame, useThree } from "@react-three/fiber"
 import Model from "./WD_logo"
@@ -47,6 +48,7 @@ const Intro = () => {
             <Environment preset={"warehouse"} background={false} />
             <Model />
           </Suspense>
+
           <Rig />
         </Canvas>
       </section>
