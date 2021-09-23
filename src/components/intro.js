@@ -1,23 +1,55 @@
 import React, { Suspense, useState, useEffect } from "react"
+import { useSpring, animated, config } from "@react-spring/three"
 import { Link } from "gatsby"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 import * as THREE from "three"
-import { Environment } from "@react-three/drei"
+import {
+  Environment,
+  Plane,
+  Sphere,
+  Icosahedron,
+  Tetrahedron,
+  MeshDistortMaterial,
+} from "@react-three/drei"
 import { EffectComposer, DepthOfField } from "@react-three/postprocessing"
 
 import { Canvas, useFrame, useThree } from "@react-three/fiber"
 import Model from "./WD_logo"
 
-function Rig() {
+const Rig = () => {
   const { camera, mouse } = useThree()
   const vec = new THREE.Vector3()
   return useFrame(() => {
     camera.position.lerp(
       vec.set(mouse.x * -7, mouse.y * -7, camera.position.z),
-      0.08
+      0.04
     )
     camera.lookAt(0, 0, 0)
   })
+}
+
+const Blob = props => {
+  const [active, setActive] = useState(true)
+
+  return (
+    <Sphere
+      {...props}
+      args={[13, 16, 16]}
+      position={[0, 60, -350]}
+      scale={[20, 12, 14]}
+      onClick={event => setActive(!active)}
+    >
+      <MeshDistortMaterial
+        attach="material"
+        color="#e40475"
+        distort={0.6}
+        speed={0.5}
+        metalness={0.5}
+        roughness={0.7}
+        wireframe={active}
+      />
+    </Sphere>
+  )
 }
 
 const Intro = () => {
@@ -37,8 +69,9 @@ const Intro = () => {
         </div>
         <Canvas
           camera={{
-            position: [0, -20, 40],
+            position: [0, -10, 40],
           }}
+          // style={{ position: "fixed" }}
         >
           <ambientLight intensity={0.2} />
           <pointLight position={[20, 20, 20]} intensity={0.4} />
@@ -48,7 +81,16 @@ const Intro = () => {
             <Environment preset={"warehouse"} background={false} />
             <Model />
           </Suspense>
+          {/* <Plane args={[40, 40]} /> */}
+          {/* <Sphere
+            args={[15, 32, 16]}
+            position={[0, 100, -500]}
+            scale={[12, 12, 12]}
+          >
+            <meshBasicMaterial attach="material" color="#e40475" />
+          </Sphere> */}
 
+          <Blob />
           <Rig />
         </Canvas>
       </section>

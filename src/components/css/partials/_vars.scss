@@ -1,6 +1,6 @@
 // Variables
 $primary: #100324; // #0e0220
-$accent: #48dfe4f1;
+$accent: #43d0d4f1;
 $highlight: #e40475;
 $text: #d7fbf6;
 
@@ -23,7 +23,7 @@ $text: #d7fbf6;
 
 @mixin lux-bg {
   background-blend-mode: screen;
-  background-image: url("../../images/struckaxiom_@2X-dark.png");
+  background-image: url("../../images/dot-grid.png");
   background-color: $primary;
   filter: contrast(110%);
   background-attachment: fixed;

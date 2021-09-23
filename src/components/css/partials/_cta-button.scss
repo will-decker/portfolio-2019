@@ -2,6 +2,7 @@
   min-width: 130px;
   position: relative;
   display: inline-block;
+  background-color: $accent;
 
   text-align: center;
   text-transform: uppercase;
@@ -15,22 +16,19 @@
   // font-size: $font-size + 40%;
   font-weight: 600;
 
+  // color: $primary;
   color: $text;
 
   transition: 0.5s;
 }
 
-.cta-btn {
-  background-color: $accent;
-}
-
 .cta-btn:before {
   position: absolute;
   content: "";
-  border-top: 5px solid lighten($accent, 5%);
-  border-left: 5px solid lighten($accent, 5%);
-  border-right: 5px solid darken($accent, 5%);
-  border-bottom: 5px solid darken($accent, 5%);
+  border-top: 5px solid $accent;
+  border-left: 5px solid $accent;
+  border-right: 5px solid $accent;
+  border-bottom: 5px solid $accent;
   border-radius: 3px;
 
   top: 0px;
@@ -43,6 +41,7 @@
 
 .cta-btn:hover {
   background-color: $highlight;
+  color: $text;
   transform: translate(-10px, -10px);
   box-shadow: 5px 5px lighten($highlight, 20%),
     10px 10px darken($highlight, 10%);

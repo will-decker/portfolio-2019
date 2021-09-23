@@ -12,7 +12,8 @@
   // transform: translateY(0);
   transform: translateY(0);
   @include headroom-trans;
-  @include lux-bg;
+  background-color: transparent;
+  // @include lux-bg;
   // box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
 }
 .headroom--scrolled {
