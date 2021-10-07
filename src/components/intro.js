@@ -35,7 +35,8 @@ const Blob = props => {
     <Sphere
       {...props}
       args={[13, 16, 16]}
-      position={[0, 60, -350]}
+      position={[0, 40, -350]}
+      rotation={[0, Math.PI / 1.8, 0]}
       scale={[20, 12, 14]}
       onClick={event => setActive(!active)}
     >
