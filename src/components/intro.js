@@ -5,6 +5,7 @@ import { AnchorLink } from "gatsby-plugin-anchor-links"
 import * as THREE from "three"
 import {
   Environment,
+  Loader,
   Plane,
   Sphere,
   Icosahedron,
@@ -94,6 +95,12 @@ const Intro = () => {
           <Blob />
           <Rig />
         </Canvas>
+        <Loader
+          containerStyles={{ backgroundColor: "#100324" }}
+          barStyles={{ backgroundColor: "#43d0d4f1" }}
+          dataInterpolation={p => `Loading ${p.toFixed(2)}%`}
+          dataStyles={{ color: "#e40475" }}
+        />
       </section>
     </>
   )
