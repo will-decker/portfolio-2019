@@ -12,18 +12,20 @@ const About = () => (
         <p>
           I'm Will Decker, a web developer who loves creating interesting
           visuals and interactions. In order to accomplish this, I use code,
-          design, animation, 3D, and video.
+          design, animation, 3D, and video. I've recently been having fun
+          working with 3D on the web using Three.js and some WebGL.
           <br />
           <br />
-          With a background in motion graphics and visual effects, I like to
-          incorporate this experience into my web development work. I believe it
-          gives me a unique perspective that allows me to create websites that
-          are more immersive.
+          Coming from a background in motion graphics and visual effects, I like
+          to incorporate this experience into my web development work. I believe
+          it gives me a unique perspective that allows me to create websites
+          that are more immersive.
           <br />
           <br />
-          Currently, in my free time, I am focusing on full-stack web
-          development with React and Node and incorporating 3D into websites
-          with WebGL.
+          Currently, I am focusing on learning advanced full-stack web
+          development with React and Node.js.
+          <br />
+          <br />
         </p>
       </div>
     </div>
