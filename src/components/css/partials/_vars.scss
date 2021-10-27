@@ -22,9 +22,9 @@ $text: #d7fbf6;
 }
 
 @mixin lux-bg {
-  background-blend-mode: screen;
+  // background-blend-mode: screen;
   background-image: url("../../images/dot-grid.png");
   background-color: $primary;
-  filter: contrast(110%);
+  // filter: contrast(116%);
   background-attachment: fixed;
 }
